@@ -70,8 +70,6 @@ if __name__ == '__main__':
   complet = len(df)
   logger.info(f'Feito {total-complet} de {total} falta {complet}')
 
-  url = 'https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/10/12/ATL08_20221012220720_03391701_005_01.h5'
-  file = url.split('/')
   with Pool(settings.CORE) as works:
     works.map(savefile,df['url'])
     
