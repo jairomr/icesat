@@ -72,7 +72,7 @@ if __name__ == '__main__':
 
   url = 'https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/10/12/ATL08_20221012220720_03391701_005_01.h5'
   file = url.split('/')
-  with Pool(12) as works:
+  with Pool(settings.CORE) as works:
     works.map(savefile,df['url'])
     
     #savefile()
