@@ -5,6 +5,8 @@ from rich import print
 import geopandas as gpd
 from icesat2.config import settings, logger
 from icesat2.utils import process_atl08
+import pandas as pd
+from multiprocessing import Pool
 #from sqlalchemy import create_engine
 #
 #engine = create_engine((
@@ -15,7 +17,7 @@ from icesat2.utils import process_atl08
 #)
 #)  
 from pymongo import MongoClient,GEOSPHERE
- 
+import shapely.geometry
  
 myclient = MongoClient(f"mongodb://{settings.DB_HOST}:{settings.DB_PORT}/")
 
@@ -53,11 +55,24 @@ def savefile(url):
             gdf['geometry']=gdf['geometry'].apply(lambda x:shapely.geometry.mapping(x))
             data = gdf.to_dict(orient='records')
             collection.insert_many(data)
-            logger.info('Save {file} in db') 
+            logger.info(f'Save {file} in db') 
             # Processo da Hunter    
         
   except Exception as e:
     logger.exception(str(e))
     
 if __name__ == '__main__':
-  savefile('https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/10/12/ATL08_20221012220720_03391701_005_01.h5')
+  files_runs = collection.distinct("file")
+  df=pd.read_csv('urls.dat')
+  df['file'] = df['url'].apply(lambda x: x.split('/')[-1])
+  total = len(df)
+  df = df[~df['file'].isin(files_runs)]
+  complet = len(df)
+  logger.info(f'Feito {total-complet} de {total} falta {complet}')
+
+  url = 'https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/10/12/ATL08_20221012220720_03391701_005_01.h5'
+  file = url.split('/')
+  with Pool(12) as works:
+    works.map(savefile,df['url'])
+    
+    #savefile()
