@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+ icesat2:
+  build: .
+  hostname: icesat2
+  container_name: icesat2
+  privileged: true
+  restart: always
+  stdin_open: true
+  tty: true
+  volumes:
+   - ./Icesat2:/APP/Icesat2'
+   - '/etc/localtime:/etc/localtime'
+
+

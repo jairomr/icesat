@@ -1,0 +1,32 @@
+name: env
+channels:
+   - conda-forge
+dependencies:
+   - python=3.10
+   - numpy
+   - h5py 
+   - scipy
+   - pandas
+   - rasterio
+   - fiona ~= 1.8.13
+   - simplekml
+   - laspy
+   - matplotlib
+   - pyproj
+   - geopandas
+   - h5py
+   - ipympl
+   - pip
+   - pytables
+   - pytest
+   - requests
+   - scikit-learn
+   - setuptools_scm
+   - shapely
+   - tk
+   - xyzservices
+   - six
+   - sliderule
+   - dynaconf
+   - loguru
+   - rich

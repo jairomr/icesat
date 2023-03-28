@@ -1,0 +1,5 @@
+sliderule
+dynaconf
+loguru
+rich
+sqlalchemy
