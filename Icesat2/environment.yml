@@ -2,7 +2,7 @@ name: env
 channels:
    - conda-forge
 dependencies:
-   - python=3.10.8
+   - python=3.10
    - numpy
    - h5py 
    - scipy
