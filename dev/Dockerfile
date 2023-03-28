@@ -31,7 +31,7 @@ RUN apt-get update --yes && \
 
 RUN cd /APP && conda env create -f environment.yml && \
     apt-get update && \
-    apt-get install -y libpq-dev libpq5 python3-dev && \
+    apt-get install -y libpq-dev libpq5 python3-dev screen && \
     apt-get clean && rm -rf /var/lib/apt/lists/*  && \
     conda run pip install -r requirements.txt  && \
     cd /tmp && \
