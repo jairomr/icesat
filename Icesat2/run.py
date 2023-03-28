@@ -54,12 +54,15 @@ def savefile(url):
             gdf = gdf.drop(columns=['longitude','latitude'])
             gdf['geometry']=gdf['geometry'].apply(lambda x:shapely.geometry.mapping(x))
             data = gdf.to_dict(orient='records')
-            collection.insert_many(data)
-            logger.info(f'Save {file} in db') 
+            if len(data) > 0:
+              collection.insert_many(data)
+              logger.success(f'Save {file} in db')
+            else:
+              logger.warning(f'File no save {file}') 
             # Processo da Hunter    
         
   except Exception as e:
-    logger.exception(str(e))
+    logger.exception(f'Error file {file}')
     
 if __name__ == '__main__':
   files_runs = collection.distinct("file")
