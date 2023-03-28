@@ -2,7 +2,7 @@ name: env
 channels:
    - conda-forge
 dependencies:
-   - python=3.10
+   - python=3.10.8
    - numpy
    - h5py 
    - scipy
@@ -30,3 +30,5 @@ dependencies:
    - dynaconf
    - loguru
    - rich
+   - psycopg2-binary
+   - geoalchemy2

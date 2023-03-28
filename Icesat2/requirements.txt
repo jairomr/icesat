@@ -3,4 +3,6 @@ dynaconf
 loguru
 rich
 sqlalchemy
-psycopg2
+psycopg2-binary
+geoalchemy2
+pymongodb

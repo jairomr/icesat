@@ -5,15 +5,31 @@ from rich import print
 import geopandas as gpd
 from icesat2.config import settings, logger
 from icesat2.utils import process_atl08
-from sqlalchemy import create_engine
+#from sqlalchemy import create_engine
+#
+#engine = create_engine((
+#  f"postgresql://{settings.DB_USER}:"
+#  f"{settings.DB_PASS}@{settings.DB_HOST}"
+#  f":{settings.DB_PORT}/{settings.DATABASE}"
+#
+#)
+#)  
+from pymongo import MongoClient,GEOSPHERE
+ 
+ 
+myclient = MongoClient(f"mongodb://{settings.DB_HOST}:{settings.DB_PORT}/")
 
-engine = create_engine((
-  f"postgresql://{settings.DB_USER}:"
-  f"{settings.DB_PASS}@{settings.DB_HOST}"
-  f":{settings.DB_PORT}/{settings.DATABASE}"
+# database
+db = myclient["icesat2"]
+ 
+# Created or Switched to collection
+# names: GeeksForGeeks
+collection = db["icesat2v3"]
+collection.create_index([("geometry", GEOSPHERE)])
+ 
 
-)
-)  
+
+
 
 def savefile(url):
   namefile = url.split('/')[-1] 
@@ -34,7 +50,10 @@ def savefile(url):
             df['file'] = namefile
             gdf = gpd.GeoDataFrame(df,crs=4326, geometry=gpd.points_from_xy(df['longitude'], df['latitude']))
             gdf = gdf.drop(columns=['longitude','latitude'])
-            print(gdf)
+            gdf['geometry']=gdf['geometry'].apply(lambda x:shapely.geometry.mapping(x))
+            data = gdf.to_dict(orient='records')
+            collection.insert_many(data)
+            logger.info('Save {file} in db') 
             # Processo da Hunter    
         
   except Exception as e:
