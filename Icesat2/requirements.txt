@@ -3,3 +3,4 @@ dynaconf
 loguru
 rich
 sqlalchemy
+psycopg2
