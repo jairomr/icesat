@@ -5,8 +5,8 @@ FROM continuumio/miniconda3
 # Override default shell and use bash
 WORKDIR /APP
 # Create Conda environment from the YAML file
-COPY environment.yml /APP
-COPY requirements.txt /APP
+COPY Icesat2/environment.yml /APP
+COPY Icesat2/requirements.txt /APP
 
 
 RUN apt-get update --yes && \
