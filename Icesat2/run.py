@@ -19,16 +19,7 @@ from multiprocessing import Pool
 from pymongo import MongoClient,GEOSPHERE
 import shapely.geometry
  
-myclient = MongoClient(f"mongodb://{settings.DB_HOST}:{settings.DB_PORT}/")
 
-# database
-db = myclient["icesat2"]
- 
-# Created or Switched to collection
-# names: GeeksForGeeks
-collection = db["icesat2v3"]
-file_null = db["icesat2v3_file_null"]
-collection.create_index([("geometry", GEOSPHERE)])
  
 
 
@@ -57,10 +48,16 @@ def savefile(url):
             data = gdf.to_dict(orient='records')
             logger.info(f'{namefile} linha {len(data)}')
             if len(data) > 0:
-              collection.insert_many(data)
+              with MongoClient(f"mongodb://{settings.DB_HOST}:{settings.DB_PORT}/") as client: 
+                db = client["icesat2"]
+                collection = db["icesat2v3"]
+                collection.insert_many(data)
               logger.success(f'Save {namefile} in db')
             else:
-              file_null.insert_many({'file':namefile})
+              with MongoClient(f"mongodb://{settings.DB_HOST}:{settings.DB_PORT}/") as client: 
+                db = client["icesat2"]
+                file_null = db["icesat2v3_file_null"]
+                file_null.insert_one({'file':namefile})
               logger.warning(f'File no save {namefile}') 
             # Processo da Hunter    
         
@@ -68,12 +65,20 @@ def savefile(url):
     logger.exception(f'Error file {url}')
     
 if __name__ == '__main__':
-  files_runs = collection.distinct("file")
-  files_runs2 = file_null.distinct("file")
+  with MongoClient(f"mongodb://{settings.DB_HOST}:{settings.DB_PORT}/") as client: 
+
+    db = client["icesat2"]
+    collection = db["icesat2v3"]
+    file_null = db["icesat2v3_file_null"]
+    collection.create_index([("geometry", GEOSPHERE)])
+    files_runs = collection.distinct("file")
+    files_runs2 = file_null.distinct("file")
+  files_runs = [*files_runs,*files_runs2]
+  logger(len(files_runs))
   df=pd.read_csv('urls.dat')
   df['file'] = df['url'].apply(lambda x: x.split('/')[-1])
   total = len(df)
-  df = df[~df['file'].isin([*files_runs,*files_runs2])]
+  df = df[~df['file'].isin(files_runs)]
   complet = len(df)
   logger.info(f'Feito {total-complet} de {total} falta {complet}')
 
