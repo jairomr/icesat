@@ -27,6 +27,7 @@ db = myclient["icesat2"]
 # Created or Switched to collection
 # names: GeeksForGeeks
 collection = db["icesat2v3"]
+file_null = db["icesat2v3_file_null"]
 collection.create_index([("geometry", GEOSPHERE)])
  
 
@@ -59,6 +60,7 @@ def savefile(url):
               collection.insert_many(data)
               logger.success(f'Save {namefile} in db')
             else:
+              file_null.insert_many({'file':namefile})
               logger.warning(f'File no save {namefile}') 
             # Processo da Hunter    
         
@@ -67,10 +69,11 @@ def savefile(url):
     
 if __name__ == '__main__':
   files_runs = collection.distinct("file")
+  files_runs2 = file_null.distinct("file")
   df=pd.read_csv('urls.dat')
   df['file'] = df['url'].apply(lambda x: x.split('/')[-1])
   total = len(df)
-  df = df[~df['file'].isin(files_runs)]
+  df = df[~df['file'].isin([*files_runs,*files_runs2])]
   complet = len(df)
   logger.info(f'Feito {total-complet} de {total} falta {complet}')
 
