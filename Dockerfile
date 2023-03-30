@@ -26,7 +26,7 @@ RUN apt-get update --yes && \
     htop \
     postgis && \
     apt-get clean && rm -rf /var/lib/apt/lists/* && \
-    chmod +x /APP/entrypoint.sh
+
 
 RUN cd /APP && conda env create -f environment.yml && \
     apt-get update && \
