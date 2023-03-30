@@ -25,7 +25,7 @@ RUN apt-get update --yes && \
     libgeos-dev \
     htop \
     postgis && \
-    apt-get clean && rm -rf /var/lib/apt/lists/* && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
 
 RUN cd /APP && conda env create -f environment.yml && \
