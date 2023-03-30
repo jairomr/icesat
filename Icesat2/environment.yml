@@ -30,5 +30,4 @@ dependencies:
    - dynaconf
    - loguru
    - rich
-   - psycopg2-binary
    - geoalchemy2

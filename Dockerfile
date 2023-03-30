@@ -25,15 +25,18 @@ RUN apt-get update --yes && \
     libgeos-dev \
     htop \
     postgis && \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
+    apt-get clean && rm -rf /var/lib/apt/lists/* && \
+    chmod +x /APP/entrypoint.sh
 
 RUN cd /APP && conda env create -f environment.yml && \
     apt-get update && \
-    apt-get install -y libpq-dev libpq5 python3-dev screen && \
+    apt-get install -y libpq-dev libpq5 libffi-dev screen && \
+    apt-get update && apt-get upgrade -y && \
+    apt-get install -y --reinstall libp11-kit0 && \
     apt-get clean && rm -rf /var/lib/apt/lists/*  && \
-    conda run pip install -r requirements.txt
+    conda run pip install -r requirements.txt 
 
-RUN cd /tmp && \
+RUN    cd /tmp && \
     git clone https://github.com/icesat-2UT/PhoREAL.git &&\
     cd PhoREAL && \
     python setup.py build && \
@@ -43,9 +46,13 @@ RUN cd /tmp && \
 SHELL ["conda", "run", "-n", "env", "/bin/bash", "-c"]
 
 
-ENV LD_LIBRARY_PATH=/lib:/usr/lib:/usr/local/lib:/lib/x86_64-linux-gnu/:/usr/lib/x86_64-linux-gnu
+ENV LD_LIBRARY_PATH=/lib:/usr/lib:/usr/local/lib:/lib/x86_64-linux-gnu/:/usr/lib/x86_64-linux-gnu \
+    SQLALCHEMY_WARN_20=1 \
+    SQLALCHEMY_SILENCE_UBER_WARNING=1
 
-CMD ["cd", "Icesat2", "&&", "python", "run.py"]
+
+
+#CMD ["python", "Icesat2/run.py"]
 
  
 

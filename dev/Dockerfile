@@ -31,7 +31,9 @@ RUN apt-get update --yes && \
 
 RUN cd /APP && conda env create -f environment.yml && \
     apt-get update && \
-    apt-get install -y libpq-dev libpq5 python3-dev screen && \
+    apt-get install -y libpq-dev libpq5 libffi-dev screen && \
+    apt-get update && apt-get upgrade -y && \
+    apt-get install -y --reinstall libp11-kit0 && \
     apt-get clean && rm -rf /var/lib/apt/lists/*  && \
     conda run pip install -r requirements.txt 
 
@@ -45,7 +47,11 @@ RUN    cd /tmp && \
 SHELL ["conda", "run", "-n", "env", "/bin/bash", "-c"]
 
 
-ENV LD_LIBRARY_PATH=/lib:/usr/lib:/usr/local/lib:/lib/x86_64-linux-gnu/:/usr/lib/x86_64-linux-gnu
+ENV LD_LIBRARY_PATH=/lib:/usr/lib:/usr/local/lib:/lib/x86_64-linux-gnu/:/usr/lib/x86_64-linux-gnu \
+    SQLALCHEMY_WARN_20=1 \
+    SQLALCHEMY_SILENCE_UBER_WARNING=1
+
+
 
 CMD ["python", "Icesat2/loop.py"]
 
