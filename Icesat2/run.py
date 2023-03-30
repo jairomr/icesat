@@ -46,7 +46,7 @@ def savefile(args):
                     gdf = gdf.drop(columns=['longitude', 'latitude'])
 
                     gdf.to_postgis(
-                        'icesatv3', engine, if_exists='append', index=False
+                        'atl08_raw', engine, if_exists='append', index=False
                     )
 
                     with MongoClient(
