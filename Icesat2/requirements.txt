@@ -4,5 +4,6 @@ loguru
 rich
 sqlalchemy==1.4.47
 psycopg2
+psycopg2-binary
 GeoAlchemy2
 pymongo

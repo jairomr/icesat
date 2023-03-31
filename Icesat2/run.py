@@ -50,7 +50,7 @@ def savefile(args):
                     )
 
                     with MongoClient(
-                        f'mongodb://{settings.DB_HOST}:{settings.DB_PORT_MONGO}/'
+                        f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/'
                     ) as client:
 
                         db = client['icesat2']
@@ -65,7 +65,7 @@ def savefile(args):
                     logger.success(f'Foi salvo o {file_name}')
                 else:
                     with MongoClient(
-                        f'mongodb://{settings.DB_HOST}:{settings.DB_PORT_MONGO}/'
+                        f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/'
                     ) as client:
                         db = client['icesat2']
                         collection = db['icesat2v3']
@@ -81,7 +81,7 @@ def savefile(args):
     except Exception as e:
         logger.exception('Error not mapeado')
         with MongoClient(
-            f'mongodb://{settings.DB_HOST}:{settings.DB_PORT_MONGO}/'
+            f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/'
         ) as client:
             db = client['icesat2']
             collection = db['icesat2v3']
@@ -92,7 +92,7 @@ def savefile(args):
 
 if __name__ == '__main__':
     with MongoClient(
-        f'mongodb://{settings.DB_HOST}:{settings.DB_PORT_MONGO}/'
+        f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/'
     ) as client:
         db = client['icesat2']
         collection = db['icesat2v3']
