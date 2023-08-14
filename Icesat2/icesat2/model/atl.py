@@ -20,7 +20,8 @@ Base = declarative_base()
 
 class Atl8QLRaw(Base):
     __tablename__ = settings.DB_NAME_ATL8
-
+    
+    id = Column(Integer, primary_key=True)
     seg_utc_time = Column(DateTime, nullable=True)
     strength = Column(ATLStrength, nullable=True)
     canopy_h_metrics_0 = Column(Float, nullable=True)
