@@ -194,7 +194,8 @@ def savefile(args):
                 '_id':_id,
                 'file': namefile_atl8, 
                 'url': url, 
-                'status': str(e)}
+                'status': 'error',
+                'msg':str(e)}
             
             try:
                 collection.insert_one(doc)
