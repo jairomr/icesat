@@ -77,8 +77,9 @@ def savefile(args):
                     atl8_len = len(df8)
                     atl8_len_geohash = 0
                     
-                    df8 = geohash_lapig(df8)
+                    
                     if atl8_len > 0:
+                        df8 = geohash_lapig(df8)
                         atl8_len_geohash = len(df8)
                     
                     if atl8_len_geohash > 0:
