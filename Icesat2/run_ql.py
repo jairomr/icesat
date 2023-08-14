@@ -24,13 +24,17 @@ from icesat2.db import engine
 
 Base.metadata.create_all(engine)
 
-
-def geohash_lapig(tmp_df):
-    tmp_df['geohash'] = geohash.encode(
-            latitude=tmp_df['latitude'],
-            longitude=tmp_df['longitude'],
+def to_geohash(row):
+    return geohash.encode(
+            latitude=row['latitude'],
+            longitude=row['longitude'],
             precision=3
         )
+
+
+
+def geohash_lapig(tmp_df):
+    tmp_df['geohash'] = tmp_df.apply(to_geohash,axis=1)
     
     return tmp_df.loc[tmp_df['geohash'].str.startswith(('d', '6', '7'), case=False)].copy()
     
@@ -69,11 +73,11 @@ def savefile(args):
                     df8 = process_atl08(file_name8)
 
                     atl8_len = len(df8)
-                    
+                    atl8_len_geohash = 0
                     
                     df8 = geohash_lapig(df8)
-                    
-                    atl8_len_geohash = len(df8)
+                    if atl8_len > 0:
+                        atl8_len_geohash = len(df8)
                     
                     if atl8_len_geohash > 0:
                         gdf8 = gpd.GeoDataFrame(
