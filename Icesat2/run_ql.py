@@ -36,7 +36,9 @@ def to_geohash(row):
 def geohash_lapig(tmp_df):
     tmp_df['geohash'] = tmp_df.apply(to_geohash,axis=1)
     
-    return tmp_df.loc[tmp_df['geohash'].str.startswith(('d', '6', '7'), case=False)].copy()
+    filtered_df = tmp_df[tmp_df['geohash'].str.startswith(('d', '6', '7'))].copy()
+    
+    return filtered_df
     
 
 
