@@ -7,3 +7,4 @@ psycopg2
 psycopg2-binary
 GeoAlchemy2
 pymongo
+python-geohash

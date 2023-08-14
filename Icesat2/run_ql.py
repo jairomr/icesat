@@ -7,31 +7,34 @@ from icesat2.config import settings, logger
 from icesat2.utils import process_atl08, process_atl03
 import pandas as pd
 from multiprocessing import Pool
-from sqlalchemy import create_engine
 from icesat2.nasa_login import SessionWithHeaderRedirection
 from time import sleep
 from random import randint
 import os
 import numpy as np
 from pymongo.errors import DuplicateKeyError
+import geohash
+from pymongo import MongoClient
 
 from datetime import datetime
+from icesat2.model.atl import Base
+from icesat2.db import engine
 
 
-COLLECTION_NAME = 'icesat2v4'
-DB_NAME_ATL8 = 'atl8_ql_raw_v4'
+
+Base.metadata.create_all(engine)
 
 
-#
-engine = create_engine(
-    (
-        f'postgresql://{settings.DB_USER}:'
-        f'{settings.DB_PASS}@{settings.DB_HOST}'
-        f':{settings.DB_PORT}/{settings.DATABASE}'
-    )
-)
-from pymongo import MongoClient
-import shapely.geometry
+def geohash_lapig(tmp_df):
+    tmp_df['geohash'] = geohash.encode(
+            latitude=tmp_df['latitude'],
+            longitude=tmp_df['longitude'],
+            precision=3
+        )
+    
+    return tmp_df.loc[tmp_df['geohash'].str.startswith(('d', '6', '7'), case=False)].copy()
+    
+
 
 
 
@@ -67,7 +70,12 @@ def savefile(args):
 
                     atl8_len = len(df8)
                     
-                    if atl8_len > 0:
+                    
+                    df8 = geohash_lapig(df8)
+                    
+                    atl8_len_geohash = len(df8)
+                    
+                    if atl8_len_geohash > 0:
                         gdf8 = gpd.GeoDataFrame(
                                 df8,
                                 crs=4326,
@@ -82,7 +90,7 @@ def savefile(args):
                         gdf8['_id'] = gdf8['_id'].astype(np.int32)
 
                         gdf8.to_postgis(
-                                DB_NAME_ATL8, engine, if_exists='append', index=False
+                                settings.DB_NAME_ATL8, engine, if_exists='append', index=False
                             )
 
 
@@ -93,7 +101,7 @@ def savefile(args):
                             ) as client:
 
                             db = client['icesat2']
-                            collection = db[COLLECTION_NAME]
+                            collection = db[settings.COLLECTION_NAME]
                             
                             doc =  {
                                         '_id':_id,
@@ -104,7 +112,8 @@ def savefile(args):
                                             'atl8':file_stats8,
                                         },
                                         'len':{
-                                            'atl8':atl8_len
+                                            'atl8':atl8_len,
+                                            'atl8_hash':atl8_len_geohash
                                         },
                                         'time':{
                                             'start':tstart,
@@ -129,7 +138,7 @@ def savefile(args):
                                 f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/'
                             ) as client:
                             db = client['icesat2']
-                            collection = db[COLLECTION_NAME]
+                            collection = db[settings.COLLECTION_NAME]
                             
                             doc = {
                                         '_id':_id,
@@ -142,6 +151,7 @@ def savefile(args):
                                         },
                                         'len':{
                                             'atl8':atl8_len,
+                                            'atl8_hash':atl8_len_geohash
                                            
                                         },
                                         'time':{
@@ -173,7 +183,7 @@ def savefile(args):
             f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/'
         ) as client:
             db = client['icesat2']
-            collection = db[COLLECTION_NAME]
+            collection = db[settings.COLLECTION_NAME]
             doc = {
                 '_id':_id,
                 'file': namefile_atl8, 
@@ -194,7 +204,7 @@ if __name__ == '__main__':
         f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/'
     ) as client:
         db = client['icesat2']
-        collection = db[COLLECTION_NAME]
+        collection = db[settings.COLLECTION_NAME]
 
         files_runs = collection.find(
             {'$or': [{'status': 'downloaded'}, {'status': 'empty file'}]}
