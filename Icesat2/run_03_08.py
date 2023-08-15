@@ -4,6 +4,7 @@ from datetime import datetime
 from multiprocessing import Pool
 
 import geopandas as gpd
+import pandas as pd
 from icesat2.config import logger, settings
 from icesat2.db import engine
 from icesat2.function import atl82atl3, geohash_lapig
