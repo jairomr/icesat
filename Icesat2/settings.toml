@@ -1,5 +1,5 @@
 DB_NAME_ATL8_QL = 'atl8_ql_raw_v5'
-COLLECTION_NAME = 'icesat2v5'
+COLLECTION_NAME_QL = 'icesat2v5'
 
 COLLECTION_NAME = 'icesat2v6'
 DB_NAME_ATL3 = 'atl3_raw_v6'
