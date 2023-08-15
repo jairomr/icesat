@@ -1,6 +1,7 @@
 from geoalchemy2 import Geometry
 from icesat2.config import logger, settings
-from sqlalchemy import Boolean, Column, DateTime, Enum, Float, Integer, String, SmallInteger
+from sqlalchemy import (Boolean, Column, DateTime, Enum, Float, Integer,
+                        SmallInteger, String)
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()

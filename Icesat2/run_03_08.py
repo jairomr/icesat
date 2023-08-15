@@ -5,18 +5,17 @@ from multiprocessing import Pool
 
 import geopandas as gpd
 from icesat2.config import logger, settings
+from icesat2.db import engine
+from icesat2.function import atl82atl3, geohash_lapig
+from icesat2.model.atl import Base
 from icesat2.nasa_login import SessionWithHeaderRedirection
 from icesat2.utils import process_atl03, process_atl08
-from icesat2.model.atl import Base
 from pymongo import MongoClient
 from pymongo.errors import DuplicateKeyError
 from requests import Session
 
-from Icesat2.icesat2.function import atl82atl3, geohash_lapig
-from Icesat2.icesat2.db import engine
-
-
 Base.metadata.create_all(engine)
+
 
 def savefile(args):
     url, _id, session, error = args
