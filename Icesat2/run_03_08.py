@@ -28,7 +28,7 @@ def savefile(args):
     namefile_atl8 = url.split('/')[-1].replace('QL', '')
     namefile_atl3 = atl82atl3(url).split('/')[-1].replace('QL', '')
 
-    try:
+    try:i
         logger.info(f'Tentado baixar: {namefile_atl8} {namefile_atl3}')
 
         logger.debug(url)
@@ -47,15 +47,20 @@ def savefile(args):
 
                     with open(file_name8, 'wb') as f:
                         f.write(f_atl08.content)
-
+                    logger.info(f'baixnado {file_name8}')
                     with open(file_name3, 'wb') as f:
                         f.write(f_atl03.content)
+                    logger.info(f'baixnado {f_atl03}')
 
                     file_stats8 = os.stat(file_name8).st_size
                     file_stats3 = os.stat(file_name3).st_size
 
+                    logger.info(f'processando {f_atl03} e {file_name8}')
+
                     df8 = process_atl08(file_name8)
+                    logger.info(f'finalizado processamento {file_name8}')
                     df3 = process_atl03(file_name3, file_name8)
+                    logger.info(f'finalizado processamento {file_name3}')
 
                     atl8_len = len(df8)
                     atl3_len = len(df3)
@@ -86,6 +91,7 @@ def savefile(args):
                             if_exists='append',
                             index=False,
                         )
+                        logger.info(f'at8 {file_name8} salvo no banco')
 
                         gdf3 = gpd.GeoDataFrame(
                             df3,
@@ -99,8 +105,7 @@ def savefile(args):
                         gdf3 = gdf3.drop(columns=['lon_ph', 'lat_ph'])
 
                         gdf3['_id'] = _id
-                        logger.info(gdf3.columns.tolist())
-                        logger.info(gdf3.dtypes)
+                        
                         
                         pages = []
                         if atl3_len > 1000000:
