@@ -1,52 +1,46 @@
-from requests import Session
-import tempfile
-
-from rich import print
-import geopandas as gpd
-from icesat2.config import settings, logger
-from icesat2.utils import process_atl08, process_atl03
-import pandas as pd
-from multiprocessing import Pool
-from sqlalchemy import create_engine
-from icesat2.nasa_login import SessionWithHeaderRedirection
-from time import sleep
-from random import randint
 import os
+import tempfile
 from datetime import datetime
-#
-engine = create_engine(
-    (
-        f'postgresql://{settings.DB_USER}:'
-        f'{settings.DB_PASS}@{settings.DB_HOST}'
-        f':{settings.DB_PORT}/{settings.DATABASE}'
-    )
-)
+from multiprocessing import Pool
+
+import geopandas as gpd
+from icesat2.config import logger, settings
+from icesat2.nasa_login import SessionWithHeaderRedirection
+from icesat2.utils import process_atl03, process_atl08
+from icesat2.model.atl import Base
 from pymongo import MongoClient
-import shapely.geometry
+from pymongo.errors import DuplicateKeyError
+from requests import Session
+
+from Icesat2.icesat2.function import atl82atl3, geohash_lapig
+from Icesat2.icesat2.db import engine
 
 
-
-def atl82atl3(name):
-    return name.replace('ATL08','ATL03')
+Base.metadata.create_all(engine)
 
 def savefile(args):
-    url, session, error = args
+    url, _id, session, error = args
     tstart = datetime.now()
-    #sleep(randint(error, (2+(error*10))))
-    session = SessionWithHeaderRedirection(settings.username, settings.password)
-    namefile_atl8 = url.split('/')[-1].replace('QL','')
-    namefile_atl3 = atl82atl3(url).split('/')[-1].replace('QL','')
+
+    session = SessionWithHeaderRedirection(
+        settings.username, settings.password
+    )
+    namefile_atl8 = url.split('/')[-1].replace('QL', '')
+    namefile_atl3 = atl82atl3(url).split('/')[-1].replace('QL', '')
+
     try:
         logger.info(f'Tentado baixar: {namefile_atl8} {namefile_atl3}')
-        #r1 = session.request('get', url)
+
         logger.debug(url)
-        
+
         f_atl08 = session.get(url, allow_redirects=True)
         f_atl03 = session.get(atl82atl3(url), allow_redirects=True)
 
-        with tempfile.TemporaryDirectory() as tmpdirname:   
+        with tempfile.TemporaryDirectory() as tmpdirname:
             if f_atl08.ok and f_atl03.ok:
-                logger.info(f'Ok Baixando {namefile_atl8} {namefile_atl3}')   # Say
+                logger.info(
+                    f'Ok Baixando {namefile_atl8} {namefile_atl3}'
+                )   # Say
                 with tempfile.TemporaryDirectory() as tmpdirname:
                     file_name8 = f'{tmpdirname}/{namefile_atl8}'
                     file_name3 = f'{tmpdirname}/{namefile_atl3}'
@@ -57,128 +51,159 @@ def savefile(args):
                     with open(file_name3, 'wb') as f:
                         f.write(f_atl03.content)
 
-
                     file_stats8 = os.stat(file_name8).st_size
                     file_stats3 = os.stat(file_name3).st_size
 
                     df8 = process_atl08(file_name8)
-                    df3 = process_atl03(file_name3,file_name8)
+                    df3 = process_atl03(file_name3, file_name8)
 
                     atl8_len = len(df8)
                     atl3_len = len(df3)
 
                     if atl8_len > 0 and atl3_len > 0:
+                        df8 = geohash_lapig(df8)
+                        atl8_len_geohash = len(df8)
+
+                        df3 = geohash_lapig(df3)
+                        atl3_len_geohash = len(df3)
+
+                    if atl8_len_geohash > 0 and atl3_len_geohash > 0:
+
                         gdf8 = gpd.GeoDataFrame(
-                                df8,
-                                crs=4326,
-                                geometry=gpd.points_from_xy(
-                                    df8['longitude'], df8['latitude']
-                                ),
-                            )
+                            df8,
+                            crs=4326,
+                            geometry=gpd.points_from_xy(
+                                df8['longitude'], df8['latitude']
+                            ),
+                        )
                         gdf8 = gdf8.drop(columns=['longitude', 'latitude'])
 
                         gdf8['file'] = namefile_atl8
 
                         gdf8.to_postgis(
-                                'atl8_raw_v2', engine, if_exists='append', index=False
-                            )
-
+                            settings.DB_NAME_ATL8,
+                            engine,
+                            if_exists='append',
+                            index=False,
+                        )
 
                         gdf3 = gpd.GeoDataFrame(
-                                df3,
-                                crs=4326,
-                                geometry=gpd.points_from_xy(
-                                    df3['lon_ph'], df3['lat_ph']
-                                ),
-                            )
+                            df3,
+                            crs=4326,
+                            geometry=gpd.points_from_xy(
+                                df3['lon_ph'], df3['lat_ph']
+                            ),
+                        )
                         gdf3 = gdf3.drop(columns=['lon_ph', 'lat_ph'])
 
                         gdf3['file'] = namefile_atl3
 
                         pages = []
                         if atl3_len > 1000000:
-                            tmp = [i for i in range(0,atl3_len,1000000)]
-                            pages = [(i, tmp[n+1]) for n,i  in enumerate(tmp[:-1])] + [(tmp[-1],atl3_len)]
+                            tmp = [i for i in range(0, atl3_len, 1000000)]
+                            pages = [
+                                (i, tmp[n + 1]) for n, i in enumerate(tmp[:-1])
+                            ] + [(tmp[-1], atl3_len)]
                             logger.debug(f'pages {len(pages)}')
                             for start, end in pages:
                                 logger.debug(f'{namefile_atl3} {start} {end}')
                                 gdf3[start:end].to_postgis(
-                                        'atl3_raw_v2', engine, if_exists='append', index=False
-                                    )
+                                    settings.DB_NAME_ATL3,
+                                    engine,
+                                    if_exists='append',
+                                    index=False,
+                                )
 
                         else:
                             gdf3.to_postgis(
-                                    'atl3_raw_v2', engine, if_exists='append', index=False
-                                )
-
+                                settings.DB_NAME_ATL3,
+                                engine,
+                                if_exists='append',
+                                index=False,
+                            )
 
                         tend = datetime.now()
                         tempo_gasto = tend - tstart
                         with MongoClient(
-                                f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/'
-                            ) as client:
+                            f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/'
+                        ) as client:
 
                             db = client['icesat2']
-                            collection = db['icesat2v4']
-                            collection.insert_one(
-                                    {
-                                        'file': namefile_atl8,
-                                        'url': url,
-                                        'status': 'downloaded',
-                                        'size':{
-                                            'atl8':file_stats8,
-                                            'atl3':file_stats3
-                                        },
-                                        'len':{
-                                            'atl8':atl8_len,
-                                            'alt3':atl3_len,
-                                            'pages':pages
-                                        },
-                                        'time':{
-                                            'start':tstart,
-                                            'end':tend
-                                        },
-                                        'tempogasto':tempo_gasto.total_seconds() / 60
-                                    }
+                            collection = db[settings.COLLECTION_NAME]
+                            doc = {
+                                '_id': _id,
+                                'file': namefile_atl8,
+                                'url': url,
+                                'status': 'downloaded',
+                                'size': {
+                                    'atl8': file_stats8,
+                                    'atl3': file_stats3,
+                                },
+                                'len': {
+                                    'atl8': atl8_len,
+                                    'alt3': atl3_len,
+                                    'atl8_hash': atl8_len_geohash,
+                                    'atl3_hash': atl3_len_geohash,
+                                    'pages': pages,
+                                },
+                                'time': {'start': tstart, 'end': tend},
+                                'tempogasto': tempo_gasto.total_seconds() / 60,
+                            }
+                            try:
+                                collection.insert_one(doc)
+                            except DuplicateKeyError:
+                                # Se ocorrer a exceção de chave duplicada, atualize o documento existente
+                                collection.update_one(
+                                    {'_id': _id}, {'$set': doc}
                                 )
-                        logger.success(f'Foi salvo o {file_name3} {file_name8}')
+                        logger.success(
+                            f'Foi salvo o {file_name3} {file_name8}'
+                        )
                     else:
                         tend = datetime.now()
                         tempo_gasto = tend - tstart
                         with MongoClient(
-                                f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/'
-                            ) as client:
+                            f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/'
+                        ) as client:
                             db = client['icesat2']
-                            collection = db['icesat2v4']
-                            collection.insert_one(
-                                    {
-                                        'file': namefile_atl8,
-                                        'url': url,
-                                        'status': 'empty file',
-                                        'size':{
-                                            'atl8':file_stats8,
-                                            'atl3':file_stats3
-                                        },
-                                        'len':{
-                                            'atl8':atl8_len,
-                                            'alt3':atl3_len
-                                        },
-                                        'time':{
-                                            'start':tstart,
-                                            'end':tend
-                                        },
-                                        'tempogasto':tempo_gasto.total_seconds() / 60
-                                    }
+                            collection = db[settings.COLLECTION_NAME]
+                            doc = {
+                                '_id': _id,
+                                'file': namefile_atl8,
+                                'url': url,
+                                'status': 'empty file',
+                                'size': {
+                                    'atl8': file_stats8,
+                                    'atl3': file_stats3,
+                                },
+                                'len': {
+                                    'atl8': atl8_len,
+                                    'alt3': atl3_len,
+                                    'atl8_hash': atl8_len_geohash,
+                                    'atl3_hash': atl3_len_geohash,
+                                },
+                                'time': {'start': tstart, 'end': tend},
+                                'tempogasto': tempo_gasto.total_seconds() / 60,
+                            }
+
+                            try:
+                                collection.insert_one(doc)
+                            except DuplicateKeyError:
+                                # Se ocorrer a exceção de chave duplicada, atualize o documento existente
+                                collection.update_one(
+                                    {'_id': _id}, {'$set': doc}
                                 )
-                            logger.warning(f'Esta vazio {file_name3} {file_name8}')
-            #elif (f_atl08.status_code == 503 and f_atl03.status_code == 503) and error < 10:
+                            logger.warning(
+                                f'Esta vazio {file_name3} {file_name8}'
+                            )
+            # elif (f_atl08.status_code == 503 and f_atl03.status_code == 503) and error < 10:
             #    logger.debug(f'ERROS:{error} - {namefile_atl8}')
             #    savefile((url, session, error+1))
             else:
                 logger.debug(f_atl08.text)
-                logger.warning(f'Erro ao baixar {f_atl08.status_code} {f_atl03.status_code}')
-                
-            
+                logger.warning(
+                    f'Erro ao baixar {f_atl08.status_code} {f_atl03.status_code}'
+                )
 
     except Exception as e:
         logger.exception('Error not mapeado')
@@ -186,13 +211,22 @@ def savefile(args):
             f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/'
         ) as client:
             db = client['icesat2']
-            collection = db['icesat2v4']
-            collection.insert_one({
-                'file': namefile_atl8, 
-                'url': url, 
-                'status': str(e)}
-            
-            )
+            collection = db[settings.COLLECTION_NAME]
+            doc = {
+                '_id': _id,
+                'file': namefile_atl8,
+                'url': url,
+                'status': 'error',
+                'msg': str(e),
+            }
+            try:
+                collection.insert_one(doc)
+                logger.warning(f'Foi salvo o {_id}')
+            except DuplicateKeyError:
+                collection.update_one({'_id': _id}, {'$set': doc})
+                logger.warning(
+                    f'Documento com erro {_id} atualizado com sucesso.'
+                )
 
 
 if __name__ == '__main__':
@@ -200,24 +234,25 @@ if __name__ == '__main__':
         f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/'
     ) as client:
         db = client['icesat2']
-        collection = db['icesat2v4']
+        collection = db[settings.COLLECTION_NAME]
 
         files_runs = collection.find(
             {'$or': [{'status': 'downloaded'}, {'status': 'empty file'}]}
         ).distinct('file')
 
     df = pd.read_csv('urls.dat')
-    df['file'] = df['url'].apply(lambda x: x.split('/')[-1].replace('QL',''))
+    df['file'] = df['url'].apply(lambda x: x.split('/')[-1].replace('QL', ''))
     total = len(df)
     df = df[~df['file'].isin(files_runs)]
     complet = len(df)
     logger.info(f'Feito {total-complet} de {total} falta {complet}')
 
-    
-        # savefile((df['url'].iloc[0],session))
+    # savefile((df['url'].iloc[0],session))
     with Session() as session:
         session.auth = (settings.username, settings.password)
-        args = [(url,session,0) for url in df['url']]
+        args = [
+            (row.url, row._id, 'session', 0)
+            for index, row in df[['url', '_id']].iterrows()
+        ]
         with Pool(settings.CORE) as works:
-                works.map(savefile, args)
-
+            works.map(savefile, args)

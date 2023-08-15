@@ -1,9 +1,8 @@
-from time import sleep
-
 # from rich import print
 import subprocess
-from icesat2.config import settings
+from time import sleep
 
+from icesat2.config import settings
 
 subprocess.Popen(
     [

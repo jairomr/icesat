@@ -1,9 +1,6 @@
-
-from icesat2.config import settings, logger
-from sqlalchemy import create_engine
+from icesat2.config import logger, settings
 from icesat2.model.atl import Base
-
-
+from sqlalchemy import create_engine
 
 engine = create_engine(
     (
@@ -12,4 +9,3 @@ engine = create_engine(
         f':{settings.DB_PORT}/{settings.DATABASE}'
     )
 )
-
