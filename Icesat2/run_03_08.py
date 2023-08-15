@@ -50,12 +50,12 @@ def savefile(args):
                     logger.info(f'baixnado {file_name8}')
                     with open(file_name3, 'wb') as f:
                         f.write(f_atl03.content)
-                    logger.info(f'baixnado {f_atl03}')
+                    logger.info(f'baixnado {file_name3}')
 
                     file_stats8 = os.stat(file_name8).st_size
                     file_stats3 = os.stat(file_name3).st_size
 
-                    logger.info(f'processando {f_atl03} e {file_name8}')
+                    logger.info(f'processando {file_name3} e {file_name8}')
 
                     df8 = process_atl08(file_name8)
                     logger.info(f'finalizado processamento {file_name8}')
@@ -66,11 +66,14 @@ def savefile(args):
                     atl3_len = len(df3)
 
                     if atl8_len > 0 and atl3_len > 0:
+                        logger.info(f'gerando geohash para {file_name8} e {file_name3}')
                         df8 = geohash_lapig(df8)
                         atl8_len_geohash = len(df8)
+                        logger.info(f'gerado geohash para {file_name8}')
 
                         df3 = geohash_lapig(df3)
                         atl3_len_geohash = len(df3)
+                        logger.info(f'gerado geohash para {file_name3}')
 
                     if atl8_len_geohash > 0 and atl3_len_geohash > 0:
 
@@ -263,5 +266,5 @@ if __name__ == '__main__':
             (row.url, row._id, 'session', 0)
             for index, row in df[['url', '_id']].iterrows()
         ]
-        for arg in args:
-            savefile(arg)
+        with Pool(settings.CORE) as works:
+            works.map(savefile, args)
