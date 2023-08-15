@@ -78,7 +78,7 @@ def savefile(args):
                         )
                         gdf8 = gdf8.drop(columns=['longitude', 'latitude'])
 
-                        gdf8['file'] = namefile_atl8
+                        gdf8['_id'] = _id
 
                         gdf8.to_postgis(
                             settings.DB_NAME_ATL8,
@@ -96,7 +96,7 @@ def savefile(args):
                         )
                         gdf3 = gdf3.drop(columns=['lon_ph', 'lat_ph'])
 
-                        gdf3['file'] = namefile_atl3
+                        gdf3['_id'] = _id
 
                         pages = []
                         if atl3_len > 1000000:
