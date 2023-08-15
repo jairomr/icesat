@@ -2,9 +2,15 @@ import geohash
 
 
 def to_geohash(row):
-    return geohash.encode(
-        latitude=row['latitude'], longitude=row['longitude'], precision=3
-    )
+    try:
+        return geohash.encode(
+            latitude=row['latitude'], longitude=row['longitude'], precision=3
+        )
+    except KeyError:
+        return geohash.encode(
+            latitude=row['lat_ph'], longitude=row['lon_ph'], precision=3
+        )
+    
 
 
 def geohash_lapig(tmp_df):
