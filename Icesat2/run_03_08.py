@@ -258,5 +258,5 @@ if __name__ == '__main__':
             (row.url, row._id, 'session', 0)
             for index, row in df[['url', '_id']].iterrows()
         ]
-        with Pool(settings.CORE) as works:
-            works.map(savefile, args)
+        for arg in args:
+            savefile(arg)
