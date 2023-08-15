@@ -94,10 +94,14 @@ def savefile(args):
                                 df3['lon_ph'], df3['lat_ph']
                             ),
                         )
+                        
+                        
                         gdf3 = gdf3.drop(columns=['lon_ph', 'lat_ph'])
 
                         gdf3['_id'] = _id
-
+                        logger.info(gdf3.columns.tolist())
+                        logger.info(gdf3.dtypes)
+                        
                         pages = []
                         if atl3_len > 1000000:
                             tmp = [i for i in range(0, atl3_len, 1000000)]
