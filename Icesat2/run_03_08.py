@@ -28,7 +28,7 @@ def savefile(args):
     namefile_atl8 = url.split('/')[-1].replace('QL', '')
     namefile_atl3 = atl82atl3(url).split('/')[-1].replace('QL', '')
 
-    try:i
+    try:
         logger.info(f'Tentado baixar: {namefile_atl8} {namefile_atl3}')
 
         logger.debug(url)
