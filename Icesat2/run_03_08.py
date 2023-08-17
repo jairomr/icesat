@@ -7,9 +7,10 @@ import geopandas as gpd
 import pandas as pd
 from icesat2.config import logger, settings
 from icesat2.db import engine
-from icesat2.function import atl82atl3, geohash_lapig
-from icesat2.model.atl import Base
+from icesat2.function import atl82atl3, geohash_lapig, saveMongo
+from icesat2.model.atl import Atl3Raw, Base
 from icesat2.nasa_login import SessionWithHeaderRedirection
+from sqlalchemy.orm import sessionmaker
 from icesat2.utils import process_atl03, process_atl08
 from pymongo import MongoClient
 from pymongo.errors import DuplicateKeyError
@@ -21,6 +22,28 @@ Base.metadata.create_all(engine)
 def savefile(args):
     url, _id, session, error = args
     tstart = datetime.now()
+    error_in_save = False
+    code_status = {
+        'atl8':False,
+        'atl3':False,
+        'atl3_pages':{
+            'pages':[],
+            'number_page':0,
+        }
+    } 
+    
+    with MongoClient( f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/') as client:
+        db = client['icesat2']
+        collection = db[settings.COLLECTION_NAME]
+        if collection.find_one({'status':'error'},{'status':1}):
+            error_in_save = True
+        
+    pre_doc = {
+        '_id': _id,
+        'file': namefile_atl8,
+        'url': url,
+     }
+    
 
     session = SessionWithHeaderRedirection(
         settings.username, settings.password
@@ -76,24 +99,46 @@ def savefile(args):
                         logger.info(f'gerado geohash para {file_name3}')
 
                     if atl8_len_geohash > 0 and atl3_len_geohash > 0:
+                        
+                        SAVE_GDF8 = True
+                        if error_in_save:
+                            if not code_status['atl8']:
+                                r1 = pd.read_sql_query(f'select _id from {settings.DB_NAME_ATL8} where _id = {_id} limit 1', engine)
+                            if len(r1) > 0 or not code_status['atl8']:
+                                SAVE_GDF8 = False
+                            r2 = pd.read_sql_query('select _id from {settings.DB_NAME_ATL3} where _id = {_id} limit 1',engine)
+                            if len(r2) > 0:
+                                Session = sessionmaker(bind=engine)
+                                session = Session()
+                                # Usar o with statement para criar e gerenciar a sessão
+                                with Session() as session:
+                                    # Deletar da tabela Atl3QLRaw
+                                    session.query(Atl3Raw).filter(Atl3Raw._id == _id).delete()
+                                
+                            
+                        if SAVE_GDF8:
+                            gdf8 = gpd.GeoDataFrame(
+                                df8,
+                                crs=4326,
+                                geometry=gpd.points_from_xy(
+                                    df8['longitude'], df8['latitude']
+                                ),
+                            )
+                            gdf8 = gdf8.drop(columns=['longitude', 'latitude'])
 
-                        gdf8 = gpd.GeoDataFrame(
-                            df8,
-                            crs=4326,
-                            geometry=gpd.points_from_xy(
-                                df8['longitude'], df8['latitude']
-                            ),
-                        )
-                        gdf8 = gdf8.drop(columns=['longitude', 'latitude'])
+                            gdf8['_id'] = _id
 
-                        gdf8['_id'] = _id
-
-                        gdf8.to_postgis(
-                            settings.DB_NAME_ATL8,
-                            engine,
-                            if_exists='append',
-                            index=False,
-                        )
+                            gdf8.to_postgis(
+                                settings.DB_NAME_ATL8,
+                                engine,
+                                if_exists='append',
+                                index=False,
+                            )
+                            code_status['atl8'] = True
+                            saveMongo({
+                                '_id':_id,
+                                'code_status':code_status,
+                            })
                         logger.info(f'at8 {file_name8} salvo no banco')
 
                         gdf3 = gpd.GeoDataFrame(
@@ -110,21 +155,30 @@ def savefile(args):
                         gdf3['_id'] = _id
                         
                         
-                        pages = []
+                        
                         if atl3_len > 1000000:
-                            tmp = [i for i in range(0, atl3_len, 1000000)]
-                            pages = [
-                                (i, tmp[n + 1]) for n, i in enumerate(tmp[:-1])
-                            ] + [(tmp[-1], atl3_len)]
+                            if len(code_status['atl3_pages']['pages']) == 0:
+                                tmp = [i for i in range(0, atl3_len, 1000000)]
+                                code_status['atl3_pages']['pages'] = [
+                                    (i, tmp[n + 1]) for n, i in enumerate(tmp[:-1])
+                                ] + [(tmp[-1], atl3_len)]
+                            pages = code_status['atl3_pages']['pages']
                             logger.debug(f'pages {len(pages)}')
-                            for start, end in pages:
-                                logger.debug(f'{namefile_atl3} {start} {end}')
-                                gdf3[start:end].to_postgis(
-                                    settings.DB_NAME_ATL3,
-                                    engine,
-                                    if_exists='append',
-                                    index=False,
-                                )
+                            for number_page, start, end in enumerate(pages):
+                                now_number_page = code_status['atl3_pages']['number_page']
+                                if number_page >= now_number_page:
+                                    code_status['atl3_pages']['number_page'] = number_page
+                                    logger.debug(f'{namefile_atl3} {start} {end}')
+                                    gdf3[start:end].to_postgis(
+                                        settings.DB_NAME_ATL3,
+                                        engine,
+                                        if_exists='append',
+                                        index=False,
+                                    )
+                                    saveMongo({
+                                        '_id':_id,
+                                        'code_status':code_status,
+                                    })
 
                         else:
                             gdf3.to_postgis(
@@ -133,6 +187,13 @@ def savefile(args):
                                 if_exists='append',
                                 index=False,
                             )
+                        
+                        code_status['atl3'] = True
+                        saveMongo({
+                                '_id':_id,
+                                'code_status':code_status,
+                            })
+                        
 
                         tend = datetime.now()
                         tempo_gasto = tend - tstart
@@ -143,9 +204,7 @@ def savefile(args):
                             db = client['icesat2']
                             collection = db[settings.COLLECTION_NAME]
                             doc = {
-                                '_id': _id,
-                                'file': namefile_atl8,
-                                'url': url,
+                                **pre_doc,
                                 'status': 'downloaded',
                                 'size': {
                                     'atl8': file_stats8,
@@ -180,9 +239,7 @@ def savefile(args):
                             db = client['icesat2']
                             collection = db[settings.COLLECTION_NAME]
                             doc = {
-                                '_id': _id,
-                                'file': namefile_atl8,
-                                'url': url,
+                                **pre_doc,
                                 'status': 'empty file',
                                 'size': {
                                     'atl8': file_stats8,

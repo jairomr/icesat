@@ -27,7 +27,7 @@ ATLStrength = Enum(
 Base = declarative_base()
 
 
-class Atl8QLRaw(Base):
+class Atl8Raw(Base):
     __tablename__ = settings.DB_NAME_ATL8
 
     id = Column(Integer, primary_key=True)
@@ -80,7 +80,7 @@ class Atl8QLRaw(Base):
     geohash = Column(String(length=3), nullable=True)
 
 
-class Atl3QLRaw(Base):
+class Atl3Raw(Base):
     __tablename__ = settings.DB_NAME_ATL3
     
     """

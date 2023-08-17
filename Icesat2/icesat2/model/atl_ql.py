@@ -76,5 +76,5 @@ class Atl8QLRaw(Base):
     geometry = Column(
         Geometry(geometry_type='POINT', srid=4326), nullable=True
     )
-    _id = Column(Integer, nullable=True)
+    
     geohash = Column(String(length=3), nullable=True)

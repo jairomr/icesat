@@ -1,137 +1,601 @@
-,url,_id
-0,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2018/10/22/ATL08_20181022183134_03680114_005_01.h5,1540233094
-1,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2018/10/26/ATL08_20181026182316_04290114_005_01.h5,1540578196
-2,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2018/11/20/ATL08_20181120170744_08100114_005_01.h5,1542733664
-3,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2018/11/24/ATL08_20181124170619_08720101_005_01.h5,1543079179
-4,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2018/12/20/ATL08_20181220033748_12600108_005_01.h5,1545277068
-5,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2018/12/24/ATL08_20181224032929_13210108_005_01.h5,1545622169
-6,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/01/21/ATL08_20190121140523_03680213_005_01.h5,1548079523
-7,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/01/21/ATL08_20190121141125_03680214_005_01.h5,1548079885
-8,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/01/25/ATL08_20190125140311_04290214_005_01.h5,1548424991
-9,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/01/26/ATL08_20190126020422_04370209_005_01.h5,1548468262
-10,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/02/23/ATL08_20190223123916_08710214_005_01.h5,1550925556
-11,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/03/24/ATL08_20190324111516_13130214_005_01.h5,1553426116
-12,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/04/22/ATL08_20190422095115_03680314_005_01.h5,1555926675
-13,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/04/26/ATL08_20190426094255_04290314_005_01.h5,1556271775
-14,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/05/21/ATL08_20190521082712_08100314_005_01.h5,1558427232
-15,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/05/21/ATL08_20190521202120_08180308_005_01.h5,1558470080
-16,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/05/25/ATL08_20190525081852_08710314_005_01.h5,1558772332
-17,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/05/25/ATL08_20190525201300_08790308_005_01.h5,1558815180
-18,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/06/19/ATL08_20190619185721_12600308_005_01.h5,1560970641
-19,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/06/23/ATL08_20190623065453_13130314_005_01.h5,1561272893
-20,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/06/23/ATL08_20190623184900_13210308_005_01.h5,1561315740
-21,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/07/22/ATL08_20190722053048_03680414_005_01.h5,1563773448
-22,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/08/20/ATL08_20190820160108_08180408_005_01.h5,1566316868
-23,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/08/24/ATL08_20190824035841_08710414_005_01.h5,1566619121
-24,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/08/24/ATL08_20190824155249_08790408_005_01.h5,1566661969
-25,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/09/18/ATL08_20190918024304_12520414_005_01.h5,1568774584
-26,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/09/18/ATL08_20190918143712_12600408_005_01.h5,1568817432
-27,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/09/22/ATL08_20190922142854_13210408_005_01.h5,1569162534
-28,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/10/17/ATL08_20191017131316_03150508_005_01.h5,1571317996
-29,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/10/25/ATL08_20191025010231_04290514_005_01.h5,1571965351
-30,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/10/25/ATL08_20191025010934_04300501_005_01.h5,1571965774
-31,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/10/25/ATL08_20191025125639_04370508_005_01.h5,1572008199
-32,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/10/25/ATL08_20191025130341_04370509_005_01.h5,1572008621
-33,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/11/18/ATL08_20191118234051_08100513_005_01.h5,1574120451
-34,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/11/18/ATL08_20191118234653_08100514_005_01.h5,1574120813
-35,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/11/23/ATL08_20191123113240_08790508_005_01.h5,1574508760
-36,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/12/17/ATL08_20191217222253_12520514_005_01.h5,1576621373
-37,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/12/18/ATL08_20191218101700_12600508_005_01.h5,1576664220
-38,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2019/12/21/ATL08_20191221221433_13130514_005_01.h5,1576966473
-39,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/01/19/ATL08_20200119205032_03680614_005_01.h5,1579467032
-40,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/01/20/ATL08_20200120084440_03760608_005_01.h5,1579509880
-41,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/02/21/ATL08_20200221191816_08710614_005_01.h5,1582312696
-42,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/03/18/ATL08_20200318055649_12600608_005_01.h5,1584511009
-43,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/03/21/ATL08_20200321175420_13130614_005_01.h5,1584813260
-44,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/04/19/ATL08_20200419163023_03680714_005_01.h5,1587313823
-45,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/04/23/ATL08_20200423162204_04290714_005_01.h5,1587658924
-46,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/05/18/ATL08_20200518150626_08100714_005_01.h5,1589814386
-47,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/05/19/ATL08_20200519030034_08180708_005_01.h5,1589857234
-48,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/05/22/ATL08_20200522145806_08710714_005_01.h5,1590159486
-49,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/05/23/ATL08_20200523025214_08790708_005_01.h5,1590202334
-50,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/06/16/ATL08_20200616134225_12520714_005_01.h5,1592314945
-51,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/06/17/ATL08_20200617013633_12600708_005_01.h5,1592357793
-52,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/06/20/ATL08_20200620133406_13130714_005_01.h5,1592660046
-53,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/06/21/ATL08_20200621012814_13210708_005_01.h5,1592702894
-54,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/07/16/ATL08_20200716001237_03150808_005_01.h5,1594858357
-55,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/07/19/ATL08_20200719121010_03680814_005_01.h5,1595160610
-56,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/07/20/ATL08_20200720000418_03760808_005_01.h5,1595203458
-57,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/07/23/ATL08_20200723120150_04290814_005_01.h5,1595505710
-58,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/08/17/ATL08_20200817104611_08100814_005_01.h5,1597661171
-59,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/08/17/ATL08_20200817224019_08180808_005_01.h5,1597704019
-60,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/08/21/ATL08_20200821103751_08710814_005_01.h5,1598006271
-61,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/08/21/ATL08_20200821223159_08790808_005_01.h5,1598049119
-62,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/08/21/ATL08_20200821223901_08790809_005_01.h5,1598049541
-63,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/09/15/ATL08_20200915211621_12600808_005_01.h5,1600204581
-64,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/09/15/ATL08_20200915224337_12610807_005_01.h5,1600209817
-65,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/09/19/ATL08_20200919091354_13130814_005_01.h5,1600506834
-66,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/09/19/ATL08_20200919210802_13210808_005_01.h5,1600549682
-67,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/10/18/ATL08_20201018074955_03680914_005_01.h5,1603007395
-68,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/10/18/ATL08_20201018194403_03760908_005_01.h5,1603050243
-69,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/11/16/ATL08_20201116182008_08180908_005_01.h5,1605550808
-70,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/11/20/ATL08_20201120181149_08790908_005_01.h5,1605895909
-71,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/11/20/ATL08_20201120181851_08790909_005_01.h5,1605896331
-72,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/12/15/ATL08_20201215165613_12600908_005_01.h5,1608051373
-73,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/12/15/ATL08_20201215170316_12600909_005_01.h5,1608051796
-74,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2020/12/19/ATL08_20201219045345_13130914_005_01.h5,1608353625
-75,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/01/13/ATL08_20210113153217_03151008_005_01.h5,1610551937
-76,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/01/17/ATL08_20210117152354_03761008_005_01.h5,1610897034
-77,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/02/15/ATL08_20210215140001_08181008_005_01.h5,1613397601
-78,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/02/19/ATL08_20210219015734_08711014_005_01.h5,1613699854
-79,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/04/18/ATL08_20210418110349_03761108_005_01.h5,1618743829
-80,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/04/21/ATL08_20210421225520_04291113_005_01.h5,1619045720
-81,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/04/21/ATL08_20210421230122_04291114_005_01.h5,1619046082
-82,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/05/20/ATL08_20210520213725_08711114_005_01.h5,1621546645
-83,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/05/21/ATL08_20210521093133_08791108_005_01.h5,1621589493
-84,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/05/21/ATL08_20210521093836_08791109_005_01.h5,1621589916
-85,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/06/14/ATL08_20210614201546_12521113_005_01.h5,1623701746
-86,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/06/14/ATL08_20210614202148_12521114_005_01.h5,1623702108
-87,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/06/15/ATL08_20210615081556_12601108_005_01.h5,1623744956
-88,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/06/18/ATL08_20210618201327_13131114_005_01.h5,1624047207
-89,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/06/19/ATL08_20210619080735_13211108_005_01.h5,1624090055
-90,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/07/14/ATL08_20210714065159_03151208_005_01.h5,1626245519
-91,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/07/14/ATL08_20210714065902_03151209_005_01.h5,1626245942
-92,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/07/17/ATL08_20210717184933_03681214_005_01.h5,1626547773
-93,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/07/18/ATL08_20210718064341_03761208_005_01.h5,1626590621
-94,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/07/21/ATL08_20210721183510_04291213_005_01.h5,1626892510
-95,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/07/21/ATL08_20210721184112_04291214_005_01.h5,1626892872
-96,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/08/15/ATL08_20210815172538_08101214_005_01.h5,1629048338
-97,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/08/16/ATL08_20210816051946_08181208_005_01.h5,1629091186
-98,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/08/19/ATL08_20210819171719_08711214_005_01.h5,1629393439
-99,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/08/20/ATL08_20210820051127_08791208_005_01.h5,1629436287
-100,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/08/20/ATL08_20210820051830_08791209_005_01.h5,1629436710
-101,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/09/14/ATL08_20210914035551_12601208_005_01.h5,1631591751
-102,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/09/17/ATL08_20210917155324_13131214_005_01.h5,1631894004
-103,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/09/18/ATL08_20210918034732_13211208_005_01.h5,1631936852
-104,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/10/13/ATL08_20211013023158_03151308_005_01.h5,1634092318
-105,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/10/16/ATL08_20211016142930_03681314_005_01.h5,1634394570
-106,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/10/20/ATL08_20211020141509_04291313_005_01.h5,1634739309
-107,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/10/20/ATL08_20211020142111_04291314_005_01.h5,1634739671
-108,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/11/14/ATL08_20211114130539_08101314_005_01.h5,1636895139
-109,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2021/12/17/ATL08_20211217232729_13211308_005_01.h5,1639783649
-110,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/01/15/ATL08_20220115100924_03681414_005_01.h5,1642241364
-111,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/01/15/ATL08_20220115220332_03761408_005_01.h5,1642284212
-112,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/02/13/ATL08_20220213203933_08181408_005_01.h5,1644784773
-113,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/03/18/ATL08_20220318071311_13131414_005_01.h5,1647587591
-114,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/03/18/ATL08_20220318190719_13211408_005_01.h5,1647630439
-115,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/04/16/ATL08_20220416054854_03681514_005_02.h5,1650088134
-116,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/04/16/ATL08_20220416174305_03761508_005_02.h5,1650130985
-117,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/04/20/ATL08_20220420054052_04291514_005_02.h5,1650433252
-118,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/05/15/ATL08_20220515042523_08101514_005_02.h5,1652588723
-119,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/05/15/ATL08_20220515161931_08181508_005_02.h5,1652631571
-120,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/05/19/ATL08_20220519041701_08711514_005_02.h5,1652933821
-121,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/05/19/ATL08_20220519161109_08791508_005_02.h5,1652976669
-122,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/06/13/ATL08_20220613145531_12601508_005_01.h5,1655132131
-123,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/06/17/ATL08_20220617025303_13131514_005_01.h5,1655434383
-124,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/06/17/ATL08_20220617144712_13211508_005_01.h5,1655477232
-125,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/07/16/ATL08_20220716012910_03681614_005_01.h5,1657934950
-126,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/07/16/ATL08_20220716132318_03761608_005_01.h5,1657977798
-127,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/07/20/ATL08_20220720011451_04291613_005_01.h5,1658279691
-128,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/07/20/ATL08_20220720012053_04291614_005_01.h5,1658280053
-129,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/07/20/ATL08_20220720131500_04371608_005_01.h5,1658322900
-130,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/08/14/ATL08_20220814115924_08181608_005_01.h5,1660478364
-131,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/08/17/ATL08_20220817235657_08711614_005_01.h5,1660780617
-132,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/08/18/ATL08_20220818115105_08791608_005_01.h5,1660823465
-133,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/09/15/ATL08_20220915223259_13131614_005_01.h5,1663281179
-134,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/09/16/ATL08_20220916102706_13211608_005_01.h5,1663324026
-135,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/005/2022/10/11/ATL08_20221011091128_03151708_005_01.h5,1665479488
+,url,date,_id
+0,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/16/ATL08_20230416115954_03991903_006_02.h5,2023-04-16 11:59:54,1681646394
+1,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/16/ATL08_20230416041351_03941904_006_02.h5,2023-04-16 04:13:51,1681618431
+2,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/16/ATL08_20230416011024_03921905_006_02.h5,2023-04-16 01:10:24,1681607424
+3,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/16/ATL08_20230416010515_03921904_006_02.h5,2023-04-16 01:05:15,1681607115
+4,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/15/ATL08_20230415043922_03791904_006_02.h5,2023-04-15 04:39:22,1681533562
+5,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/15/ATL08_20230415030504_03781904_006_02.h5,2023-04-15 03:05:04,1681527904
+6,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/15/ATL08_20230415013047_03771904_006_02.h5,2023-04-15 01:30:47,1681522247
+7,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/15/ATL08_20230415002235_03761908_006_02.h5,2023-04-15 00:22:35,1681518155
+8,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/14/ATL08_20230414122829_03681914_006_01.h5,2023-04-14 12:28:29,1681475309
+9,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/14/ATL08_20230414112212_03681904_006_01.h5,2023-04-14 11:22:12,1681471332
+10,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/14/ATL08_20230414015627_03621904_006_01.h5,2023-04-14 01:56:27,1681437387
+11,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/13/ATL08_20230413114745_03531904_006_01.h5,2023-04-13 11:47:45,1681386465
+12,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/13/ATL08_20230413114220_03531903_006_01.h5,2023-04-13 11:42:20,1681386140
+13,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/13/ATL08_20230413035619_03481904_006_01.h5,2023-04-13 03:56:19,1681358179
+14,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/13/ATL08_20230413022201_03471904_006_01.h5,2023-04-13 02:22:01,1681352521
+15,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/13/ATL08_20230413005253_03461905_006_01.h5,2023-04-13 00:52:53,1681347173
+16,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/12/ATL08_20230412120800_03381903_006_01.h5,2023-04-12 12:08:00,1681301280
+17,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/12/ATL08_20230412042158_03331904_006_01.h5,2023-04-12 04:21:58,1681273318
+18,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/12/ATL08_20230412011832_03311905_006_01.h5,2023-04-12 01:18:32,1681262312
+19,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/12/ATL08_20230412011323_03311904_006_01.h5,2023-04-12 01:13:23,1681262003
+20,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/11/ATL08_20230411044739_03181904_006_01.h5,2023-04-11 04:47:39,1681188459
+21,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/11/ATL08_20230411031322_03171904_006_01.h5,2023-04-11 03:13:22,1681182802
+22,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/11/ATL08_20230411013905_03161904_006_01.h5,2023-04-11 01:39:05,1681177145
+23,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/11/ATL08_20230411003054_03151908_006_01.h5,2023-04-11 00:30:54,1681173054
+24,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/10/ATL08_20230410124351_03081901_006_01.h5,2023-04-10 12:43:51,1681130631
+25,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/10/ATL08_20230410123648_03071914_006_01.h5,2023-04-10 12:36:48,1681130208
+26,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/10/ATL08_20230410113031_03071904_006_01.h5,2023-04-10 11:30:31,1681126231
+27,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/10/ATL08_20230410020447_03011904_006_01.h5,2023-04-10 02:04:47,1681092287
+28,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/09/ATL08_20230409115612_02921904_006_01.h5,2023-04-09 11:56:12,1681041372
+29,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/09/ATL08_20230409115047_02921903_006_01.h5,2023-04-09 11:50:47,1681041047
+30,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/09/ATL08_20230409040445_02871904_006_01.h5,2023-04-09 04:04:45,1681013085
+31,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/09/ATL08_20230409023027_02861904_006_01.h5,2023-04-09 02:30:27,1681007427
+32,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/09/ATL08_20230409010119_02851905_006_01.h5,2023-04-09 01:01:19,1681002079
+33,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/08/ATL08_20230408121626_02771903_006_01.h5,2023-04-08 12:16:26,1680956186
+34,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/08/ATL08_20230408043024_02721904_006_01.h5,2023-04-08 04:30:24,1680928224
+35,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/08/ATL08_20230408012658_02701905_006_01.h5,2023-04-08 01:26:58,1680917218
+36,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/07/ATL08_20230407014731_02551904_006_01.h5,2023-04-07 01:47:31,1680832051
+37,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/06/ATL08_20230406125226_02471901_006_01.h5,2023-04-06 12:52:26,1680785546
+38,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/06/ATL08_20230406124523_02461914_006_01.h5,2023-04-06 12:45:23,1680785123
+39,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/06/ATL08_20230406113905_02461904_006_01.h5,2023-04-06 11:39:05,1680781145
+40,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/06/ATL08_20230406021320_02401904_006_01.h5,2023-04-06 02:13:20,1680747200
+41,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/05/ATL08_20230405120442_02311904_006_01.h5,2023-04-05 12:04:42,1680696282
+42,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/05/ATL08_20230405041313_02261904_006_01.h5,2023-04-05 04:13:13,1680667993
+43,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/05/ATL08_20230405023856_02251904_006_01.h5,2023-04-05 02:38:56,1680662336
+44,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/05/ATL08_20230405010947_02241905_006_01.h5,2023-04-05 01:09:47,1680656987
+45,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/04/ATL08_20230404122451_02161903_006_01.h5,2023-04-04 12:24:51,1680611091
+46,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/04/ATL08_20230404043849_02111904_006_01.h5,2023-04-04 04:38:49,1680583129
+47,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/04/ATL08_20230404013523_02091905_006_01.h5,2023-04-04 01:35:23,1680572123
+48,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/03/ATL08_20230403050415_01961904_006_01.h5,2023-04-03 05:04:15,1680498255
+49,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/03/ATL08_20230403032958_01951904_006_01.h5,2023-04-03 03:29:58,1680492598
+50,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/03/ATL08_20230403015540_01941904_006_01.h5,2023-04-03 01:55:40,1680486940
+51,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/02/ATL08_20230402130029_01861901_006_01.h5,2023-04-02 13:00:29,1680440429
+52,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/02/ATL08_20230402053001_01811904_006_01.h5,2023-04-02 05:30:01,1680413401
+53,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/02/ATL08_20230402022127_01791904_006_01.h5,2023-04-02 02:21:27,1680402087
+54,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/01/ATL08_20230401121257_01701904_006_01.h5,2023-04-01 12:12:57,1680351177
+55,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/01/ATL08_20230401024713_01641904_006_01.h5,2023-04-01 02:47:13,1680317233
+56,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/04/01/ATL08_20230401011805_01631905_006_01.h5,2023-04-01 01:18:05,1680311885
+57,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/31/ATL08_20230331123320_01551903_006_01.h5,2023-03-31 12:33:20,1680266000
+58,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/31/ATL08_20230331044715_01501904_006_01.h5,2023-03-31 04:47:15,1680238035
+59,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/31/ATL08_20230331014348_01481905_006_01.h5,2023-03-31 01:43:48,1680227028
+60,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/30/ATL08_20230330125848_01401903_006_01.h5,2023-03-30 12:58:48,1680181128
+61,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/30/ATL08_20230330033829_01341904_006_01.h5,2023-03-30 03:38:29,1680147509
+62,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/30/ATL08_20230330020411_01331904_006_01.h5,2023-03-30 02:04:11,1680141851
+63,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/29/ATL08_20230329053818_01201904_006_01.h5,2023-03-29 05:38:18,1680068298
+64,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/29/ATL08_20230329022943_01181904_006_01.h5,2023-03-29 02:29:43,1680056983
+65,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/29/ATL08_20230329011430_01171907_006_01.h5,2023-03-29 01:14:30,1680052470
+66,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/28/ATL08_20230328122106_01091904_006_01.h5,2023-03-28 12:21:06,1680006066
+67,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/28/ATL08_20230328025524_01031904_006_01.h5,2023-03-28 02:55:24,1679972124
+68,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/28/ATL08_20230328012616_01021905_006_01.h5,2023-03-28 01:26:16,1679966776
+69,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/27/ATL08_20230327124130_00941903_006_01.h5,2023-03-27 12:41:30,1679920890
+70,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/27/ATL08_20230327045529_00891904_006_01.h5,2023-03-27 04:55:29,1679892929
+71,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/27/ATL08_20230327015203_00871905_006_01.h5,2023-03-27 01:52:03,1679881923
+72,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/26/ATL08_20230326130712_00791903_006_01.h5,2023-03-26 13:07:12,1679836032
+73,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/26/ATL08_20230326052110_00741904_006_01.h5,2023-03-26 05:21:10,1679808070
+74,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/26/ATL08_20230326034652_00731904_006_01.h5,2023-03-26 03:46:52,1679802412
+75,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/26/ATL08_20230326021235_00721904_006_01.h5,2023-03-26 02:12:35,1679796755
+76,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/25/ATL08_20230325054647_00591904_006_01.h5,2023-03-25 05:46:47,1679723207
+77,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/25/ATL08_20230325023812_00571904_006_01.h5,2023-03-25 02:38:12,1679711892
+78,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/25/ATL08_20230325013001_00561908_006_01.h5,2023-03-25 01:30:01,1679707801
+79,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/25/ATL08_20230325012259_00561907_006_01.h5,2023-03-25 01:22:59,1679707379
+80,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/24/ATL08_20230324122933_00481904_006_01.h5,2023-03-24 12:29:33,1679660973
+81,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/24/ATL08_20230324030350_00421904_006_01.h5,2023-03-24 03:03:50,1679627030
+82,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/23/ATL08_20230323125000_00331903_006_01.h5,2023-03-23 12:50:00,1679575800
+83,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/23/ATL08_20230323050358_00281904_006_01.h5,2023-03-23 05:03:58,1679547838
+84,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/23/ATL08_20230323020031_00261905_006_01.h5,2023-03-23 02:00:31,1679536831
+85,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/22/ATL08_20230322131536_00181903_006_01.h5,2023-03-22 13:15:36,1679490936
+86,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/22/ATL08_20230322052932_00131904_006_01.h5,2023-03-22 05:29:32,1679462972
+87,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/22/ATL08_20230322035515_00121904_006_01.h5,2023-03-22 03:55:15,1679457315
+88,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/22/ATL08_20230322022606_00111905_006_01.h5,2023-03-22 02:26:06,1679451966
+89,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/22/ATL08_20230322022057_00111904_006_01.h5,2023-03-22 02:20:57,1679451657
+90,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/21/ATL08_20230321055510_13851804_006_01.h5,2023-03-21 05:55:10,1679378110
+91,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/21/ATL08_20230321024636_13831804_006_01.h5,2023-03-21 02:46:36,1679366796
+92,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/21/ATL08_20230321013825_13821808_006_01.h5,2023-03-21 01:38:25,1679362705
+93,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/21/ATL08_20230321013123_13821807_006_01.h5,2023-03-21 01:31:23,1679362283
+94,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/20/ATL08_20230320123758_13741804_006_01.h5,2023-03-20 12:37:58,1679315878
+95,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/20/ATL08_20230320031214_13681804_006_01.h5,2023-03-20 03:12:14,1679281934
+96,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/19/ATL08_20230319130342_13591804_006_01.h5,2023-03-19 13:03:42,1679231022
+97,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/19/ATL08_20230319125817_13591803_006_01.h5,2023-03-19 12:58:17,1679230697
+98,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/19/ATL08_20230319051215_13541804_006_01.h5,2023-03-19 05:12:15,1679202735
+99,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/19/ATL08_20230319033757_13531804_006_01.h5,2023-03-19 03:37:57,1679197077
+100,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/19/ATL08_20230319020849_13521805_006_01.h5,2023-03-19 02:08:49,1679191729
+101,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/18/ATL08_20230318132354_13441803_006_01.h5,2023-03-18 13:23:54,1679145834
+102,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/18/ATL08_20230318053750_13391804_006_01.h5,2023-03-18 05:37:50,1679117870
+103,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/18/ATL08_20230318023424_13371805_006_01.h5,2023-03-18 02:34:24,1679106864
+104,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/18/ATL08_20230318022914_13371804_006_01.h5,2023-03-18 02:29:14,1679106554
+105,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/17/ATL08_20230317060330_13241804_006_01.h5,2023-03-17 06:03:30,1679033010
+106,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/17/ATL08_20230317042912_13231804_006_01.h5,2023-03-17 04:29:12,1679027352
+107,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/17/ATL08_20230317025455_13221804_006_01.h5,2023-03-17 02:54:55,1679021695
+108,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/17/ATL08_20230317014644_13211808_006_01.h5,2023-03-17 01:46:44,1679017604
+109,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/16/ATL08_20230316135230_13131814_006_01.h5,2023-03-16 13:52:30,1678974750
+110,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/16/ATL08_20230316124612_13131804_006_01.h5,2023-03-16 12:46:12,1678970772
+111,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/16/ATL08_20230316032028_13071804_006_01.h5,2023-03-16 03:20:28,1678936828
+112,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/15/ATL08_20230315131150_12981804_006_01.h5,2023-03-15 13:11:50,1678885910
+113,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/15/ATL08_20230315130625_12981803_006_01.h5,2023-03-15 13:06:25,1678885585
+114,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/15/ATL08_20230315052022_12931804_006_01.h5,2023-03-15 05:20:22,1678857622
+115,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/15/ATL08_20230315034604_12921804_006_01.h5,2023-03-15 03:46:04,1678851964
+116,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/15/ATL08_20230315021656_12911805_006_01.h5,2023-03-15 02:16:56,1678846616
+117,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/14/ATL08_20230314133201_12831803_006_01.h5,2023-03-14 13:32:01,1678800721
+118,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/14/ATL08_20230314054601_12781804_006_01.h5,2023-03-14 05:46:01,1678772761
+119,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/14/ATL08_20230314024236_12761805_006_01.h5,2023-03-14 02:42:36,1678761756
+120,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/14/ATL08_20230314023727_12761804_006_01.h5,2023-03-14 02:37:27,1678761447
+121,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/13/ATL08_20230313043727_12621804_006_01.h5,2023-03-13 04:37:27,1678682247
+122,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/13/ATL08_20230313030310_12611804_006_01.h5,2023-03-13 03:03:10,1678676590
+123,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/13/ATL08_20230313015459_12601808_006_01.h5,2023-03-13 01:54:59,1678672499
+124,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/12/ATL08_20230312140048_12521814_006_01.h5,2023-03-12 14:00:48,1678629648
+125,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/12/ATL08_20230312125430_12521804_006_01.h5,2023-03-12 12:54:30,1678625670
+126,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/12/ATL08_20230312032846_12461804_006_01.h5,2023-03-12 03:28:46,1678591726
+127,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/11/ATL08_20230311132010_12371804_006_01.h5,2023-03-11 13:20:10,1678540810
+128,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/11/ATL08_20230311131444_12371803_006_01.h5,2023-03-11 13:14:44,1678540484
+129,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/11/ATL08_20230311052842_12321804_006_01.h5,2023-03-11 05:28:42,1678512522
+130,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/11/ATL08_20230311035424_12311804_006_01.h5,2023-03-11 03:54:24,1678506864
+131,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/11/ATL08_20230311022516_12301805_006_01.h5,2023-03-11 02:25:16,1678501516
+132,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/10/ATL08_20230310055422_12171804_006_01.h5,2023-03-10 05:54:22,1678427662
+133,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/10/ATL08_20230310025057_12151805_006_01.h5,2023-03-10 02:50:57,1678416657
+134,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/09/ATL08_20230309062007_12021804_006_01.h5,2023-03-09 06:20:07,1678342807
+135,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/09/ATL08_20230309044550_12011804_006_01.h5,2023-03-09 04:45:50,1678337150
+136,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/09/ATL08_20230309031133_12001804_006_01.h5,2023-03-09 03:11:33,1678331493
+137,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/08/ATL08_20230308141616_11921801_006_01.h5,2023-03-08 14:16:16,1678284976
+138,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/08/ATL08_20230308140913_11911814_006_01.h5,2023-03-08 14:09:13,1678284553
+139,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/08/ATL08_20230308033711_11851804_006_01.h5,2023-03-08 03:37:11,1678246631
+140,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/07/ATL08_20230307053707_11711804_006_01.h5,2023-03-07 05:37:07,1678167427
+141,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/07/ATL08_20230307040249_11701804_006_01.h5,2023-03-07 04:02:49,1678161769
+142,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/07/ATL08_20230307023341_11691805_006_01.h5,2023-03-07 02:33:41,1678156421
+143,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/06/ATL08_20230306134849_11611803_006_01.h5,2023-03-06 13:48:49,1678110529
+144,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/06/ATL08_20230306060247_11561804_006_01.h5,2023-03-06 06:02:47,1678082567
+145,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/05/ATL08_20230305062832_11411804_006_01.h5,2023-03-05 06:28:32,1677997712
+146,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/05/ATL08_20230305045415_11401804_006_01.h5,2023-03-05 04:54:15,1677992055
+147,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/05/ATL08_20230305031957_11391804_006_01.h5,2023-03-05 03:19:57,1677986397
+148,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/04/ATL08_20230304142436_11311801_006_01.h5,2023-03-04 14:24:36,1677939876
+149,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/04/ATL08_20230304141734_11301814_006_01.h5,2023-03-04 14:17:34,1677939454
+150,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/04/ATL08_20230304034531_11241804_006_01.h5,2023-03-04 03:45:31,1677901531
+151,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/03/ATL08_20230303133655_11151804_006_01.h5,2023-03-03 13:36:55,1677850615
+152,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/03/ATL08_20230303024203_11081805_006_01.h5,2023-03-03 02:42:03,1677811323
+153,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/02/ATL08_20230302061059_10951804_006_01.h5,2023-03-02 06:10:59,1677737459
+154,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/01/ATL08_20230301142243_10851803_006_01.h5,2023-03-01 14:22:43,1677680563
+155,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/01/ATL08_20230301063642_10801804_006_01.h5,2023-03-01 06:36:42,1677652602
+156,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/01/ATL08_20230301050224_10791804_006_01.h5,2023-03-01 05:02:24,1677646944
+157,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/03/01/ATL08_20230301032807_10781804_006_01.h5,2023-03-01 03:28:07,1677641287
+158,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/28/ATL08_20230228070222_10651804_006_01.h5,2023-02-28 07:02:22,1677567742
+159,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/28/ATL08_20230228035348_10631804_006_01.h5,2023-02-28 03:53:48,1677556428
+160,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/28/ATL08_20230228023835_10621807_006_01.h5,2023-02-28 02:38:35,1677551915
+161,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/26/ATL08_20230226140550_10391803_006_01.h5,2023-02-26 14:05:50,1677420350
+162,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/26/ATL08_20230226061947_10341804_006_01.h5,2023-02-26 06:19:47,1677392387
+163,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/26/ATL08_20230226031621_10321805_006_01.h5,2023-02-26 03:16:21,1677381381
+164,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/25/ATL08_20230225143122_10241803_006_01.h5,2023-02-25 14:31:22,1677335482
+165,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/25/ATL08_20230225064519_10191804_006_01.h5,2023-02-25 06:45:19,1677307519
+166,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/25/ATL08_20230225051101_10181804_006_01.h5,2023-02-25 05:11:01,1677301861
+167,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/25/ATL08_20230225033644_10171804_006_01.h5,2023-02-25 03:36:44,1677296204
+168,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/24/ATL08_20230224071057_10041804_006_01.h5,2023-02-24 07:10:57,1677222657
+169,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/24/ATL08_20230224040222_10021804_006_01.h5,2023-02-24 04:02:22,1677211342
+170,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/24/ATL08_20230224025411_10011808_006_01.h5,2023-02-24 02:54:11,1677207251
+171,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/24/ATL08_20230224024709_10011807_006_01.h5,2023-02-24 02:47:09,1677206829
+172,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/23/ATL08_20230223135336_09931804_006_01.h5,2023-02-23 13:53:36,1677160416
+173,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/23/ATL08_20230223042752_09871804_006_01.h5,2023-02-23 04:27:52,1677126472
+174,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/22/ATL08_20230222141351_09781803_006_01.h5,2023-02-22 14:13:51,1677075231
+175,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/22/ATL08_20230222062749_09731804_006_01.h5,2023-02-22 06:27:49,1677047269
+176,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/22/ATL08_20230222032423_09711805_006_01.h5,2023-02-22 03:24:23,1677036263
+177,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/21/ATL08_20230221143929_09631803_006_01.h5,2023-02-21 14:39:29,1676990369
+178,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/21/ATL08_20230221065327_09581804_006_01.h5,2023-02-21 06:53:27,1676962407
+179,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/21/ATL08_20230221051909_09571804_006_01.h5,2023-02-21 05:19:09,1676956749
+180,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/20/ATL08_20230220071900_09431804_006_01.h5,2023-02-20 07:19:00,1676877540
+181,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/20/ATL08_20230220030215_09401808_006_01.h5,2023-02-20 03:02:15,1676862135
+182,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/20/ATL08_20230220025513_09401807_006_01.h5,2023-02-20 02:55:13,1676861713
+183,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/19/ATL08_20230219140157_09321804_006_01.h5,2023-02-19 14:01:57,1676815317
+184,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/19/ATL08_20230219043612_09261804_006_01.h5,2023-02-19 04:36:12,1676781372
+185,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/18/ATL08_20230218142208_09171803_006_01.h5,2023-02-18 14:22:08,1676730128
+186,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/18/ATL08_20230218063605_09121804_006_01.h5,2023-02-18 06:36:05,1676702165
+187,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/18/ATL08_20230218033239_09101805_006_01.h5,2023-02-18 03:32:39,1676691159
+188,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/17/ATL08_20230217144743_09021803_006_01.h5,2023-02-17 14:47:43,1676645263
+189,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/17/ATL08_20230217035817_08951805_006_01.h5,2023-02-17 03:58:17,1676606297
+190,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/17/ATL08_20230217035308_08951804_006_01.h5,2023-02-17 03:53:08,1676605988
+191,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/16/ATL08_20230216072724_08821804_006_01.h5,2023-02-16 07:27:24,1676532444
+192,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/16/ATL08_20230216041849_08801804_006_01.h5,2023-02-16 04:18:49,1676521129
+193,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/15/ATL08_20230215151631_08711814_006_01.h5,2023-02-15 15:16:31,1676474191
+194,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/15/ATL08_20230215141013_08711804_006_01.h5,2023-02-15 14:10:13,1676470213
+195,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/15/ATL08_20230215044428_08651804_006_01.h5,2023-02-15 04:44:28,1676436268
+196,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/14/ATL08_20230214064424_08511804_006_01.h5,2023-02-14 06:44:24,1676357064
+197,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/14/ATL08_20230214051007_08501804_006_01.h5,2023-02-14 05:10:07,1676351407
+198,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/14/ATL08_20230214034059_08491805_006_01.h5,2023-02-14 03:40:59,1676346059
+199,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/13/ATL08_20230213145607_08411803_006_01.h5,2023-02-13 14:56:07,1676300167
+200,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/13/ATL08_20230213071006_08361804_006_01.h5,2023-02-13 07:10:06,1676272206
+201,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/13/ATL08_20230213040640_08341805_006_01.h5,2023-02-13 04:06:40,1676261200
+202,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/13/ATL08_20230213040131_08341804_006_01.h5,2023-02-13 04:01:31,1676260891
+203,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/12/ATL08_20230212073543_08211804_006_01.h5,2023-02-12 07:35:43,1676187343
+204,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/12/ATL08_20230212060125_08201804_006_01.h5,2023-02-12 06:01:25,1676181685
+205,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/12/ATL08_20230212042708_08191804_006_01.h5,2023-02-12 04:27:08,1676176028
+206,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/12/ATL08_20230212031856_08181808_006_01.h5,2023-02-12 03:18:56,1676171936
+207,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/11/ATL08_20230211152446_08101814_006_01.h5,2023-02-11 15:24:46,1676129086
+208,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/11/ATL08_20230211141828_08101804_006_01.h5,2023-02-11 14:18:28,1676125108
+209,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/11/ATL08_20230211045243_08041804_006_01.h5,2023-02-11 04:52:43,1676091163
+210,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/10/ATL08_20230210144406_07951804_006_01.h5,2023-02-10 14:44:06,1676040246
+211,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/10/ATL08_20230210143841_07951803_006_01.h5,2023-02-10 14:38:41,1676039921
+212,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/10/ATL08_20230210051823_07891804_006_01.h5,2023-02-10 05:18:23,1676006303
+213,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/10/ATL08_20230210034915_07881805_006_01.h5,2023-02-10 03:49:15,1676000955
+214,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/09/ATL08_20230209150425_07801803_006_01.h5,2023-02-09 15:04:25,1675955065
+215,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/09/ATL08_20230209041458_07731805_006_01.h5,2023-02-09 04:14:58,1675916098
+216,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/08/ATL08_20230208074402_07601804_006_01.h5,2023-02-08 07:44:02,1675842242
+217,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/08/ATL08_20230208060944_07591804_006_01.h5,2023-02-08 06:09:44,1675836584
+218,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/07/ATL08_20230207154009_07501801_006_01.h5,2023-02-07 15:40:09,1675784409
+219,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/07/ATL08_20230207153306_07491814_006_01.h5,2023-02-07 15:33:06,1675783986
+220,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/07/ATL08_20230207050106_07431804_006_01.h5,2023-02-07 05:01:06,1675746066
+221,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/06/ATL08_20230206145231_07341804_006_01.h5,2023-02-06 14:52:31,1675695151
+222,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/06/ATL08_20230206144706_07341803_006_01.h5,2023-02-06 14:47:06,1675694826
+223,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/06/ATL08_20230206070104_07291804_006_01.h5,2023-02-06 07:01:04,1675666864
+224,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/06/ATL08_20230206052647_07281804_006_01.h5,2023-02-06 05:26:47,1675661207
+225,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/06/ATL08_20230206035739_07271805_006_01.h5,2023-02-06 03:57:39,1675655859
+226,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/05/ATL08_20230205151248_07191803_006_01.h5,2023-02-05 15:12:48,1675609968
+227,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/05/ATL08_20230205072646_07141804_006_01.h5,2023-02-05 07:26:46,1675582006
+228,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/05/ATL08_20230205042320_07121805_006_01.h5,2023-02-05 04:23:20,1675571000
+229,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/04/ATL08_20230204075222_06991804_006_01.h5,2023-02-04 07:52:22,1675497142
+230,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/04/ATL08_20230204044347_06971804_006_01.h5,2023-02-04 04:43:47,1675485827
+231,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/03/ATL08_20230203154829_06891801_006_01.h5,2023-02-03 15:48:29,1675439309
+232,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/03/ATL08_20230203154127_06881814_006_01.h5,2023-02-03 15:41:27,1675438887
+233,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/03/ATL08_20230203050926_06821804_006_01.h5,2023-02-03 05:09:26,1675400966
+234,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/02/ATL08_20230202150056_06731804_006_01.h5,2023-02-02 15:00:56,1675350056
+235,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/02/ATL08_20230202070929_06681804_006_01.h5,2023-02-02 07:09:29,1675321769
+236,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/02/ATL08_20230202053511_06671804_006_01.h5,2023-02-02 05:35:11,1675316111
+237,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/02/ATL08_20230202040603_06661805_006_01.h5,2023-02-02 04:06:03,1675310763
+238,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/01/ATL08_20230201152107_06581803_006_01.h5,2023-02-01 15:21:07,1675264867
+239,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/01/ATL08_20230201073504_06531804_006_01.h5,2023-02-01 07:35:04,1675236904
+240,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/02/01/ATL08_20230201043138_06511805_006_01.h5,2023-02-01 04:31:38,1675225898
+241,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/31/ATL08_20230131080041_06381804_006_01.h5,2023-01-31 08:00:41,1675152041
+242,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/31/ATL08_20230131062623_06371804_006_01.h5,2023-01-31 06:26:23,1675146383
+243,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/31/ATL08_20230131045206_06361804_006_01.h5,2023-01-31 04:52:06,1675140726
+244,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/30/ATL08_20230130082622_06231804_006_01.h5,2023-01-30 08:26:22,1675067182
+245,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/30/ATL08_20230130051747_06211804_006_01.h5,2023-01-30 05:17:47,1675055867
+246,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/29/ATL08_20230129150919_06121804_006_01.h5,2023-01-29 15:09:19,1675004959
+247,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/29/ATL08_20230129054334_06061804_006_01.h5,2023-01-29 05:43:34,1674971014
+248,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/28/ATL08_20230128152932_05971803_006_01.h5,2023-01-28 15:29:32,1674919772
+249,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/28/ATL08_20230128074329_05921804_006_01.h5,2023-01-28 07:43:29,1674891809
+250,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/28/ATL08_20230128044003_05901805_006_01.h5,2023-01-28 04:40:03,1674880803
+251,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/27/ATL08_20230127080906_05771804_006_01.h5,2023-01-27 08:09:06,1674806946
+252,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/27/ATL08_20230127063449_05761804_006_01.h5,2023-01-27 06:34:49,1674801289
+253,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/27/ATL08_20230127050032_05751804_006_01.h5,2023-01-27 05:00:32,1674795632
+254,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/26/ATL08_20230126083450_05621804_006_01.h5,2023-01-26 08:34:50,1674722090
+255,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/26/ATL08_20230126052616_05601804_006_01.h5,2023-01-26 05:26:16,1674710776
+256,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/26/ATL08_20230126041103_05591807_006_01.h5,2023-01-26 04:11:03,1674706263
+257,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/24/ATL08_20230124044833_05291805_006_01.h5,2023-01-24 04:48:33,1674535713
+258,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/23/ATL08_20230123160320_05211803_006_01.h5,2023-01-23 16:03:20,1674489800
+259,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/23/ATL08_20230123081719_05161804_006_01.h5,2023-01-23 08:17:19,1674461839
+260,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/23/ATL08_20230123064302_05151804_006_01.h5,2023-01-23 06:43:02,1674456182
+261,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/23/ATL08_20230123050845_05141804_006_01.h5,2023-01-23 05:08:45,1674450525
+262,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/22/ATL08_20230122053429_04991804_006_01.h5,2023-01-22 05:34:29,1674365669
+263,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/22/ATL08_20230122042618_04981808_006_01.h5,2023-01-22 04:26:18,1674361578
+264,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/22/ATL08_20230122041916_04981807_006_01.h5,2023-01-22 04:19:16,1674361156
+265,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/21/ATL08_20230121152554_04901804_006_01.h5,2023-01-21 15:25:54,1674314754
+266,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/21/ATL08_20230121060010_04841804_006_01.h5,2023-01-21 06:00:10,1674280810
+267,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/20/ATL08_20230120080002_04701804_006_01.h5,2023-01-20 08:00:02,1674201602
+268,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/20/ATL08_20230120045637_04681805_006_01.h5,2023-01-20 04:56:37,1674190597
+269,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/19/ATL08_20230119161130_04601803_006_01.h5,2023-01-19 16:11:30,1674144690
+270,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/19/ATL08_20230119082530_04551804_006_01.h5,2023-01-19 08:25:30,1674116730
+271,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/19/ATL08_20230119065113_04541804_006_01.h5,2023-01-19 06:51:13,1674111073
+272,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/19/ATL08_20230119052205_04531805_006_01.h5,2023-01-19 05:22:05,1674105725
+273,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/19/ATL08_20230119051656_04531804_006_01.h5,2023-01-19 05:16:56,1674105416
+274,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/18/ATL08_20230118085113_04401804_006_01.h5,2023-01-18 08:51:13,1674031873
+275,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/18/ATL08_20230118071656_04391804_006_01.h5,2023-01-18 07:16:56,1674026216
+276,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/18/ATL08_20230118054238_04381804_006_01.h5,2023-01-18 05:42:38,1674020558
+277,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/18/ATL08_20230118043427_04371808_006_01.h5,2023-01-18 04:34:27,1674016467
+278,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/17/ATL08_20230117164020_04291814_006_01.h5,2023-01-17 16:40:20,1673973620
+279,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/17/ATL08_20230117153403_04291804_006_01.h5,2023-01-17 15:34:03,1673969643
+280,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/17/ATL08_20230117060818_04231804_006_01.h5,2023-01-17 06:08:18,1673935698
+281,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/16/ATL08_20230116155944_04141804_006_01.h5,2023-01-16 15:59:44,1673884784
+282,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/16/ATL08_20230116155419_04141803_006_01.h5,2023-01-16 15:54:19,1673884459
+283,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/16/ATL08_20230116080818_04091804_006_01.h5,2023-01-16 08:08:18,1673856498
+284,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/16/ATL08_20230116063401_04081804_006_01.h5,2023-01-16 06:34:01,1673850841
+285,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/16/ATL08_20230116050453_04071805_006_01.h5,2023-01-16 05:04:53,1673845493
+286,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/15/ATL08_20230115162001_03991803_006_01.h5,2023-01-15 16:20:01,1673799601
+287,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/15/ATL08_20230115083359_03941804_006_01.h5,2023-01-15 08:33:59,1673771639
+288,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/15/ATL08_20230115053034_03921805_006_01.h5,2023-01-15 05:30:34,1673760634
+289,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/15/ATL08_20230115052525_03921804_006_01.h5,2023-01-15 05:25:25,1673760325
+290,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/14/ATL08_20230114085938_03791804_006_01.h5,2023-01-14 08:59:38,1673686778
+291,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/14/ATL08_20230114072520_03781804_006_01.h5,2023-01-14 07:25:20,1673681120
+292,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/14/ATL08_20230114055103_03771804_006_01.h5,2023-01-14 05:51:03,1673675463
+293,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/14/ATL08_20230114044252_03761808_006_01.h5,2023-01-14 04:42:52,1673671372
+294,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/13/ATL08_20230113164842_03681814_006_01.h5,2023-01-13 16:48:42,1673628522
+295,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/13/ATL08_20230113154224_03681804_006_01.h5,2023-01-13 15:42:24,1673624544
+296,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/13/ATL08_20230113061639_03621804_006_01.h5,2023-01-13 06:16:39,1673590599
+297,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/12/ATL08_20230112160803_03531804_006_01.h5,2023-01-12 16:08:03,1673539683
+298,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/12/ATL08_20230112160238_03531803_006_01.h5,2023-01-12 16:02:38,1673539358
+299,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/12/ATL08_20230112081636_03481804_006_01.h5,2023-01-12 08:16:36,1673511396
+300,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/12/ATL08_20230112064218_03471804_006_01.h5,2023-01-12 06:42:18,1673505738
+301,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/12/ATL08_20230112051310_03461805_006_01.h5,2023-01-12 05:13:10,1673500390
+302,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/11/ATL08_20230111162817_03381803_006_01.h5,2023-01-11 16:28:17,1673454497
+303,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/11/ATL08_20230111084215_03331804_006_01.h5,2023-01-11 08:42:15,1673426535
+304,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/11/ATL08_20230111053849_03311805_006_01.h5,2023-01-11 05:38:49,1673415529
+305,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/11/ATL08_20230111053340_03311804_006_01.h5,2023-01-11 05:33:40,1673415220
+306,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/10/ATL08_20230110090753_03181804_006_01.h5,2023-01-10 09:07:53,1673341673
+307,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/10/ATL08_20230110073336_03171804_006_01.h5,2023-01-10 07:33:36,1673336016
+308,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/10/ATL08_20230110055919_03161804_006_01.h5,2023-01-10 05:59:19,1673330359
+309,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/10/ATL08_20230110045108_03151808_006_01.h5,2023-01-10 04:51:08,1673326268
+310,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/09/ATL08_20230109170403_03081801_006_01.h5,2023-01-09 17:04:03,1673283843
+311,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/09/ATL08_20230109165701_03071814_006_01.h5,2023-01-09 16:57:01,1673283421
+312,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/09/ATL08_20230109155043_03071804_006_01.h5,2023-01-09 15:50:43,1673279443
+313,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/09/ATL08_20230109062459_03011804_006_01.h5,2023-01-09 06:24:59,1673245499
+314,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/08/ATL08_20230108161622_02921804_006_01.h5,2023-01-08 16:16:22,1673194582
+315,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/08/ATL08_20230108161057_02921803_006_01.h5,2023-01-08 16:10:57,1673194257
+316,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/08/ATL08_20230108082456_02871804_006_01.h5,2023-01-08 08:24:56,1673166296
+317,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/08/ATL08_20230108065038_02861804_006_01.h5,2023-01-08 06:50:38,1673160638
+318,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/08/ATL08_20230108052130_02851805_006_01.h5,2023-01-08 05:21:30,1673155290
+319,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/07/ATL08_20230107163637_02771803_006_01.h5,2023-01-07 16:36:37,1673109397
+320,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/07/ATL08_20230107085035_02721804_006_01.h5,2023-01-07 08:50:35,1673081435
+321,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/07/ATL08_20230107054709_02701805_006_01.h5,2023-01-07 05:47:09,1673070429
+322,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/06/ATL08_20230106091612_02571804_006_01.h5,2023-01-06 09:16:12,1672996572
+323,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/06/ATL08_20230106060737_02551804_006_01.h5,2023-01-06 06:07:37,1672985257
+324,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/05/ATL08_20230105171221_02471801_006_01.h5,2023-01-05 17:12:21,1672938741
+325,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/05/ATL08_20230105170519_02461814_006_01.h5,2023-01-05 17:05:19,1672938319
+326,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/05/ATL08_20230105155901_02461804_006_01.h5,2023-01-05 15:59:01,1672934341
+327,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/05/ATL08_20230105063317_02401804_006_01.h5,2023-01-05 06:33:17,1672900397
+328,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/04/ATL08_20230104162441_02311804_006_01.h5,2023-01-04 16:24:41,1672849481
+329,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/04/ATL08_20230104083314_02261804_006_01.h5,2023-01-04 08:33:14,1672821194
+330,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/04/ATL08_20230104065856_02251804_006_01.h5,2023-01-04 06:58:56,1672815536
+331,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/04/ATL08_20230104052948_02241805_006_01.h5,2023-01-04 05:29:48,1672810188
+332,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/03/ATL08_20230103164454_02161803_006_01.h5,2023-01-03 16:44:54,1672764294
+333,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/03/ATL08_20230103085853_02111804_006_01.h5,2023-01-03 08:58:53,1672736333
+334,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/03/ATL08_20230103055528_02091805_006_01.h5,2023-01-03 05:55:28,1672725328
+335,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/02/ATL08_20230102075018_01951804_006_01.h5,2023-01-02 07:50:18,1672645818
+336,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/02/ATL08_20230102061601_01941804_006_01.h5,2023-01-02 06:16:01,1672640161
+337,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/01/ATL08_20230101172046_01861801_006_01.h5,2023-01-01 17:20:46,1672593646
+338,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/01/ATL08_20230101095017_01811804_006_01.h5,2023-01-01 09:50:17,1672566617
+339,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2023/01/01/ATL08_20230101064142_01791804_006_01.h5,2023-01-01 06:41:42,1672555302
+340,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/31/ATL08_20221231163304_01701804_006_01.h5,2022-12-31 16:33:04,1672504384
+341,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/31/ATL08_20221231070719_01641804_006_01.h5,2022-12-31 07:07:19,1672470439
+342,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/31/ATL08_20221231053811_01631805_006_01.h5,2022-12-31 05:38:11,1672465091
+343,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/30/ATL08_20221230165315_01551803_006_01.h5,2022-12-30 16:53:15,1672419195
+344,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/30/ATL08_20221230090714_01501804_006_01.h5,2022-12-30 09:07:14,1672391234
+345,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/30/ATL08_20221230060349_01481805_006_01.h5,2022-12-30 06:03:49,1672380229
+346,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/29/ATL08_20221229171901_01401803_006_01.h5,2022-12-29 17:19:01,1672334341
+347,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/29/ATL08_20221229093259_01351804_006_01.h5,2022-12-29 09:32:59,1672306379
+348,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/29/ATL08_20221229075841_01341804_006_01.h5,2022-12-29 07:58:41,1672300721
+349,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/29/ATL08_20221229062424_01331804_006_01.h5,2022-12-29 06:24:24,1672295064
+350,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/28/ATL08_20221228065002_01181804_006_01.h5,2022-12-28 06:50:02,1672210202
+351,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/28/ATL08_20221228053449_01171807_006_01.h5,2022-12-28 05:34:49,1672205689
+352,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/27/ATL08_20221227164124_01091804_006_01.h5,2022-12-27 16:41:24,1672159284
+353,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/27/ATL08_20221227071540_01031804_006_01.h5,2022-12-27 07:15:40,1672125340
+354,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/27/ATL08_20221227054632_01021805_006_01.h5,2022-12-27 05:46:32,1672119992
+355,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/26/ATL08_20221226170138_00941803_006_01.h5,2022-12-26 17:01:38,1672074098
+356,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/26/ATL08_20221226091537_00891804_006_01.h5,2022-12-26 09:15:37,1672046137
+357,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/26/ATL08_20221226061211_00871805_006_01.h5,2022-12-26 06:12:11,1672035131
+358,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/25/ATL08_20221225172701_00791803_006_01.h5,2022-12-25 17:27:01,1671989221
+359,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/25/ATL08_20221225094101_00741804_006_01.h5,2022-12-25 09:41:01,1671961261
+360,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/25/ATL08_20221225080644_00731804_006_01.h5,2022-12-25 08:06:44,1671955604
+361,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/25/ATL08_20221225063227_00721804_006_01.h5,2022-12-25 06:32:27,1671949947
+362,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/24/ATL08_20221224100655_00591804_006_01.h5,2022-12-24 10:06:55,1671876415
+363,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/24/ATL08_20221224065820_00571804_006_01.h5,2022-12-24 06:58:20,1671865100
+364,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/24/ATL08_20221224055009_00561808_006_01.h5,2022-12-24 05:50:09,1671861009
+365,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/24/ATL08_20221224054307_00561807_006_01.h5,2022-12-24 05:43:07,1671860587
+366,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/23/ATL08_20221223072357_00421804_006_01.h5,2022-12-23 07:23:57,1671780237
+367,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/22/ATL08_20221222170956_00331803_006_01.h5,2022-12-22 17:09:56,1671728996
+368,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/22/ATL08_20221222092354_00281804_006_01.h5,2022-12-22 09:23:54,1671701034
+369,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/22/ATL08_20221222062029_00261805_006_01.h5,2022-12-22 06:20:29,1671690029
+370,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/21/ATL08_20221221173535_00181803_006_01.h5,2022-12-21 17:35:35,1671644135
+371,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/21/ATL08_20221221094933_00131804_006_01.h5,2022-12-21 09:49:33,1671616173
+372,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/21/ATL08_20221221081515_00121804_006_01.h5,2022-12-21 08:15:15,1671610515
+373,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/21/ATL08_20221221064607_00111805_006_01.h5,2022-12-21 06:46:07,1671605167
+374,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/21/ATL08_20221221064058_00111804_006_01.h5,2022-12-21 06:40:58,1671604858
+375,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/20/ATL08_20221220101510_13851704_006_01.h5,2022-12-20 10:15:10,1671531310
+376,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/20/ATL08_20221220070635_13831704_006_01.h5,2022-12-20 07:06:35,1671519995
+377,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/20/ATL08_20221220055824_13821708_006_01.h5,2022-12-20 05:58:24,1671515904
+378,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/20/ATL08_20221220055122_13821707_006_01.h5,2022-12-20 05:51:22,1671515482
+379,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/19/ATL08_20221219073215_13681704_006_01.h5,2022-12-19 07:32:15,1671435135
+380,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/18/ATL08_20221218093214_13541704_006_01.h5,2022-12-18 09:32:14,1671355934
+381,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/18/ATL08_20221218075757_13531704_006_01.h5,2022-12-18 07:57:57,1671350277
+382,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/18/ATL08_20221218062849_13521705_006_01.h5,2022-12-18 06:28:49,1671344929
+383,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/17/ATL08_20221217174355_13441703_006_01.h5,2022-12-17 17:43:55,1671299035
+384,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/17/ATL08_20221217095753_13391704_006_01.h5,2022-12-17 09:57:53,1671271073
+385,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/17/ATL08_20221217065427_13371705_006_01.h5,2022-12-17 06:54:27,1671260067
+386,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/17/ATL08_20221217064918_13371704_006_01.h5,2022-12-17 06:49:18,1671259758
+387,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/16/ATL08_20221216102331_13241704_006_01.h5,2022-12-16 10:23:31,1671186211
+388,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/16/ATL08_20221216084914_13231704_006_01.h5,2022-12-16 08:49:14,1671180554
+389,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/16/ATL08_20221216071456_13221704_006_01.h5,2022-12-16 07:14:56,1671174896
+390,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/16/ATL08_20221216060645_13211708_006_01.h5,2022-12-16 06:06:45,1671170805
+391,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/15/ATL08_20221215181236_13131714_006_01.h5,2022-12-15 18:12:36,1671127956
+392,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/15/ATL08_20221215170619_13131704_006_01.h5,2022-12-15 17:06:19,1671123979
+393,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/15/ATL08_20221215074035_13071704_006_01.h5,2022-12-15 07:40:35,1671090035
+394,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/14/ATL08_20221214173200_12981704_006_01.h5,2022-12-14 17:32:00,1671039120
+395,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/14/ATL08_20221214172634_12981703_006_01.h5,2022-12-14 17:26:34,1671038794
+396,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/14/ATL08_20221214094033_12931704_006_01.h5,2022-12-14 09:40:33,1671010833
+397,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/14/ATL08_20221214080615_12921704_006_01.h5,2022-12-14 08:06:15,1671005175
+398,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/14/ATL08_20221214063707_12911705_006_01.h5,2022-12-14 06:37:07,1670999827
+399,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/13/ATL08_20221213175214_12831703_006_01.h5,2022-12-13 17:52:14,1670953934
+400,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/13/ATL08_20221213100613_12781704_006_01.h5,2022-12-13 10:06:13,1670925973
+401,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/13/ATL08_20221213070247_12761705_006_01.h5,2022-12-13 07:02:47,1670914967
+402,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/13/ATL08_20221213065738_12761704_006_01.h5,2022-12-13 06:57:38,1670914658
+403,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/12/ATL08_20221212103153_12631704_006_01.h5,2022-12-12 10:31:53,1670841113
+404,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/12/ATL08_20221212085736_12621704_006_01.h5,2022-12-12 08:57:36,1670835456
+405,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/12/ATL08_20221212061508_12601708_006_01.h5,2022-12-12 06:15:08,1670825708
+406,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/11/ATL08_20221211182802_12531701_006_01.h5,2022-12-11 18:28:02,1670783282
+407,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/11/ATL08_20221211182100_12521714_006_01.h5,2022-12-11 18:21:00,1670782860
+408,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/11/ATL08_20221211171442_12521704_006_01.h5,2022-12-11 17:14:42,1670778882
+409,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/11/ATL08_20221211074858_12461704_006_01.h5,2022-12-11 07:48:58,1670744938
+410,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/10/ATL08_20221210174020_12371704_006_01.h5,2022-12-10 17:40:20,1670694020
+411,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/10/ATL08_20221210173455_12371703_006_01.h5,2022-12-10 17:34:55,1670693695
+412,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/10/ATL08_20221210094853_12321704_006_01.h5,2022-12-10 09:48:53,1670665733
+413,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/10/ATL08_20221210081435_12311704_006_01.h5,2022-12-10 08:14:35,1670660075
+414,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/10/ATL08_20221210064527_12301705_006_01.h5,2022-12-10 06:45:27,1670654727
+415,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/09/ATL08_20221209180033_12221703_006_01.h5,2022-12-09 18:00:33,1670608833
+416,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/09/ATL08_20221209101431_12171704_006_01.h5,2022-12-09 10:14:31,1670580871
+417,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/09/ATL08_20221209071106_12151705_006_01.h5,2022-12-09 07:11:06,1670569866
+418,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/08/ATL08_20221208104012_12021704_006_01.h5,2022-12-08 10:40:12,1670496012
+419,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/08/ATL08_20221208090555_12011704_006_01.h5,2022-12-08 09:05:55,1670490355
+420,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/08/ATL08_20221208073137_12001704_006_01.h5,2022-12-08 07:31:37,1670484697
+421,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/07/ATL08_20221207183622_11921701_006_01.h5,2022-12-07 18:36:22,1670438182
+422,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/07/ATL08_20221207182919_11911714_006_01.h5,2022-12-07 18:29:19,1670437759
+423,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/07/ATL08_20221207172302_11911704_006_01.h5,2022-12-07 17:23:02,1670433782
+424,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/07/ATL08_20221207075718_11851704_006_01.h5,2022-12-07 07:57:18,1670399838
+425,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/06/ATL08_20221206174842_11761704_006_01.h5,2022-12-06 17:48:42,1670348922
+426,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/06/ATL08_20221206095715_11711704_006_01.h5,2022-12-06 09:57:15,1670320635
+427,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/06/ATL08_20221206065349_11691705_006_01.h5,2022-12-06 06:53:49,1670309629
+428,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/05/ATL08_20221205180857_11611703_006_01.h5,2022-12-05 18:08:57,1670263737
+429,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/05/ATL08_20221205102255_11561704_006_01.h5,2022-12-05 10:22:55,1670235775
+430,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/05/ATL08_20221205071929_11541705_006_01.h5,2022-12-05 07:19:29,1670224769
+431,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/04/ATL08_20221204104834_11411704_006_01.h5,2022-12-04 10:48:34,1670150914
+432,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/04/ATL08_20221204091417_11401704_006_01.h5,2022-12-04 09:14:17,1670145257
+433,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/04/ATL08_20221204073959_11391704_006_01.h5,2022-12-04 07:39:59,1670139599
+434,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/03/ATL08_20221203183741_11301714_006_01.h5,2022-12-03 18:37:41,1670092661
+435,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/03/ATL08_20221203080539_11241704_006_01.h5,2022-12-03 08:05:39,1670054739
+436,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/02/ATL08_20221202175702_11151704_006_01.h5,2022-12-02 17:57:02,1670003822
+437,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/02/ATL08_20221202083117_11091704_006_01.h5,2022-12-02 08:31:17,1669969877
+438,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/02/ATL08_20221202070209_11081705_006_01.h5,2022-12-02 07:02:09,1669964529
+439,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/01/ATL08_20221201181715_11001703_006_01.h5,2022-12-01 18:17:15,1669918635
+440,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/01/ATL08_20221201103113_10951704_006_01.h5,2022-12-01 10:31:13,1669890673
+441,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/12/01/ATL08_20221201072748_10931705_006_01.h5,2022-12-01 07:27:48,1669879668
+442,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/30/ATL08_20221130105654_10801704_006_01.h5,2022-11-30 10:56:54,1669805814
+443,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/30/ATL08_20221130092237_10791704_006_01.h5,2022-11-30 09:22:37,1669800157
+444,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/30/ATL08_20221130074819_10781704_006_01.h5,2022-11-30 07:48:19,1669794499
+445,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/29/ATL08_20221129112235_10651704_006_01.h5,2022-11-29 11:22:35,1669720955
+446,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/29/ATL08_20221129081400_10631704_006_01.h5,2022-11-29 08:14:00,1669709640
+447,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/28/ATL08_20221128180523_10541704_006_01.h5,2022-11-28 18:05:23,1669658723
+448,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/28/ATL08_20221128083939_10481704_006_01.h5,2022-11-28 08:39:39,1669624779
+449,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/27/ATL08_20221127182538_10391703_006_01.h5,2022-11-27 18:25:38,1669573538
+450,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/27/ATL08_20221127103936_10341704_006_01.h5,2022-11-27 10:39:36,1669545576
+451,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/27/ATL08_20221127073611_10321705_006_01.h5,2022-11-27 07:36:11,1669534571
+452,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/26/ATL08_20221126185119_10241703_006_01.h5,2022-11-26 18:51:19,1669488679
+453,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/26/ATL08_20221126110517_10191704_006_01.h5,2022-11-26 11:05:17,1669460717
+454,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/26/ATL08_20221126093059_10181704_006_01.h5,2022-11-26 09:30:59,1669455059
+455,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/26/ATL08_20221126075642_10171704_006_01.h5,2022-11-26 07:56:42,1669449402
+456,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/25/ATL08_20221125082220_10021704_006_01.h5,2022-11-25 08:22:20,1669364540
+457,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/25/ATL08_20221125071409_10011708_006_01.h5,2022-11-25 07:14:09,1669360449
+458,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/25/ATL08_20221125070707_10011707_006_01.h5,2022-11-25 07:07:07,1669360027
+459,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/24/ATL08_20221124181342_09931704_006_01.h5,2022-11-24 18:13:42,1669313622
+460,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/24/ATL08_20221124084758_09871704_006_01.h5,2022-11-24 08:47:58,1669279678
+461,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/23/ATL08_20221123183356_09781703_006_01.h5,2022-11-23 18:33:56,1669228436
+462,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/23/ATL08_20221123104754_09731704_006_01.h5,2022-11-23 10:47:54,1669200474
+463,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/23/ATL08_20221123074428_09711705_006_01.h5,2022-11-23 07:44:28,1669189468
+464,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/22/ATL08_20221122185935_09631703_006_01.h5,2022-11-22 18:59:35,1669143575
+465,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/22/ATL08_20221122111333_09581704_006_01.h5,2022-11-22 11:13:33,1669115613
+466,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/22/ATL08_20221122081008_09561705_006_01.h5,2022-11-22 08:10:08,1669104608
+467,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/22/ATL08_20221122080459_09561704_006_01.h5,2022-11-22 08:04:59,1669104299
+468,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/21/ATL08_20221121113913_09431704_006_01.h5,2022-11-21 11:39:13,1669030753
+469,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/21/ATL08_20221121083038_09411704_006_01.h5,2022-11-21 08:30:38,1669019438
+470,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/21/ATL08_20221121072227_09401708_006_01.h5,2022-11-21 07:22:27,1669015347
+471,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/21/ATL08_20221121071526_09401707_006_01.h5,2022-11-21 07:15:26,1669014926
+472,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/20/ATL08_20221120182202_09321704_006_01.h5,2022-11-20 18:22:02,1668968522
+473,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/20/ATL08_20221120085618_09261704_006_01.h5,2022-11-20 08:56:18,1668934578
+474,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/19/ATL08_20221119184216_09171703_006_01.h5,2022-11-19 18:42:16,1668883336
+475,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/19/ATL08_20221119105614_09121704_006_01.h5,2022-11-19 10:56:14,1668855374
+476,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/19/ATL08_20221119092157_09111704_006_01.h5,2022-11-19 09:21:57,1668849717
+477,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/19/ATL08_20221119075249_09101705_006_01.h5,2022-11-19 07:52:49,1668844369
+478,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/18/ATL08_20221118190755_09021703_006_01.h5,2022-11-18 19:07:55,1668798475
+479,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/18/ATL08_20221118112154_08971704_006_01.h5,2022-11-18 11:21:54,1668770514
+480,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/18/ATL08_20221118081828_08951705_006_01.h5,2022-11-18 08:18:28,1668759508
+481,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/18/ATL08_20221118081319_08951704_006_01.h5,2022-11-18 08:13:19,1668759199
+482,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/17/ATL08_20221117114733_08821704_006_01.h5,2022-11-17 11:47:33,1668685653
+483,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/17/ATL08_20221117101316_08811704_006_01.h5,2022-11-17 10:13:16,1668679996
+484,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/17/ATL08_20221117083858_08801704_006_01.h5,2022-11-17 08:38:58,1668674338
+485,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/17/ATL08_20221117073047_08791708_006_01.h5,2022-11-17 07:30:47,1668670247
+486,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/16/ATL08_20221116193639_08711714_006_01.h5,2022-11-16 19:36:39,1668627399
+487,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/16/ATL08_20221116183021_08711704_006_01.h5,2022-11-16 18:30:21,1668623421
+488,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/16/ATL08_20221116090436_08651704_006_01.h5,2022-11-16 09:04:36,1668589476
+489,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/15/ATL08_20221115185559_08561704_006_01.h5,2022-11-15 18:55:59,1668538559
+490,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/15/ATL08_20221115185034_08561703_006_01.h5,2022-11-15 18:50:34,1668538234
+491,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/15/ATL08_20221115110432_08511704_006_01.h5,2022-11-15 11:04:32,1668510272
+492,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/15/ATL08_20221115093014_08501704_006_01.h5,2022-11-15 09:30:14,1668504614
+493,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/15/ATL08_20221115080106_08491705_006_01.h5,2022-11-15 08:01:06,1668499266
+494,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/14/ATL08_20221114191613_08411703_006_01.h5,2022-11-14 19:16:13,1668453373
+495,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/14/ATL08_20221114113011_08361704_006_01.h5,2022-11-14 11:30:11,1668425411
+496,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/14/ATL08_20221114082646_08341705_006_01.h5,2022-11-14 08:26:46,1668414406
+497,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/14/ATL08_20221114082136_08341704_006_01.h5,2022-11-14 08:21:36,1668414096
+498,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/13/ATL08_20221113102133_08201704_006_01.h5,2022-11-13 10:21:33,1668334893
+499,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/13/ATL08_20221113084716_08191704_006_01.h5,2022-11-13 08:47:16,1668329236
+500,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/13/ATL08_20221113073905_08181708_006_01.h5,2022-11-13 07:39:05,1668325145
+501,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/12/ATL08_20221112194457_08101714_006_01.h5,2022-11-12 19:44:57,1668282297
+502,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/12/ATL08_20221112183840_08101704_006_01.h5,2022-11-12 18:38:40,1668278320
+503,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/12/ATL08_20221112091255_08041704_006_01.h5,2022-11-12 09:12:55,1668244375
+504,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/11/ATL08_20221111190419_07951704_006_01.h5,2022-11-11 19:04:19,1668193459
+505,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/11/ATL08_20221111185854_07951703_006_01.h5,2022-11-11 18:58:54,1668193134
+506,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/11/ATL08_20221111111252_07901704_006_01.h5,2022-11-11 11:12:52,1668165172
+507,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/11/ATL08_20221111093835_07891704_006_01.h5,2022-11-11 09:38:35,1668159515
+508,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/11/ATL08_20221111080926_07881705_006_01.h5,2022-11-11 08:09:26,1668154166
+509,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/10/ATL08_20221110113831_07751704_006_01.h5,2022-11-10 11:38:31,1668080311
+510,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/10/ATL08_20221110083505_07731705_006_01.h5,2022-11-10 08:35:05,1668069305
+511,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/09/ATL08_20221109120412_07601704_006_01.h5,2022-11-09 12:04:12,1667995452
+512,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/09/ATL08_20221109102954_07591704_006_01.h5,2022-11-09 10:29:54,1667989794
+513,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/09/ATL08_20221109085537_07581704_006_01.h5,2022-11-09 08:55:37,1667984137
+514,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/08/ATL08_20221108200021_07501701_006_01.h5,2022-11-08 20:00:21,1667937621
+515,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/08/ATL08_20221108195319_07491714_006_01.h5,2022-11-08 19:53:19,1667937199
+516,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/08/ATL08_20221108184701_07491704_006_01.h5,2022-11-08 18:47:01,1667933221
+517,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/07/ATL08_20221107191242_07341704_006_01.h5,2022-11-07 19:12:42,1667848362
+518,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/07/ATL08_20221107190717_07341703_006_01.h5,2022-11-07 19:07:17,1667848037
+519,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/07/ATL08_20221107112115_07291704_006_01.h5,2022-11-07 11:21:15,1667820075
+520,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/07/ATL08_20221107094658_07281704_006_01.h5,2022-11-07 09:46:58,1667814418
+521,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/07/ATL08_20221107081749_07271705_006_01.h5,2022-11-07 08:17:49,1667809069
+522,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/06/ATL08_20221106193257_07191703_006_01.h5,2022-11-06 19:32:57,1667763177
+523,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/06/ATL08_20221106114655_07141704_006_01.h5,2022-11-06 11:46:55,1667735215
+524,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/06/ATL08_20221106084329_07121705_006_01.h5,2022-11-06 08:43:29,1667724209
+525,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/05/ATL08_20221105121233_06991704_006_01.h5,2022-11-05 12:12:33,1667650353
+526,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/05/ATL08_20221105103816_06981704_006_01.h5,2022-11-05 10:38:16,1667644696
+527,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/05/ATL08_20221105090359_06971704_006_01.h5,2022-11-05 09:03:59,1667639039
+528,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/04/ATL08_20221104200842_06891701_006_01.h5,2022-11-04 20:08:42,1667592522
+529,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/04/ATL08_20221104200139_06881714_006_01.h5,2022-11-04 20:01:39,1667592099
+530,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/04/ATL08_20221104092937_06821704_006_01.h5,2022-11-04 09:29:37,1667554177
+531,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/03/ATL08_20221103112934_06681704_006_01.h5,2022-11-03 11:29:34,1667474974
+532,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/03/ATL08_20221103095516_06671704_006_01.h5,2022-11-03 09:55:16,1667469316
+533,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/03/ATL08_20221103082608_06661705_006_01.h5,2022-11-03 08:26:08,1667463968
+534,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/02/ATL08_20221102194115_06581703_006_01.h5,2022-11-02 19:41:15,1667418075
+535,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/02/ATL08_20221102115514_06531704_006_01.h5,2022-11-02 11:55:14,1667390114
+536,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/02/ATL08_20221102085148_06511705_006_01.h5,2022-11-02 08:51:48,1667379108
+537,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/01/ATL08_20221101122054_06381704_006_01.h5,2022-11-01 12:20:54,1667305254
+538,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/01/ATL08_20221101104637_06371704_006_01.h5,2022-11-01 10:46:37,1667299597
+539,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/11/01/ATL08_20221101091219_06361704_006_01.h5,2022-11-01 09:12:19,1667293939
+540,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/31/ATL08_20221031124634_06231704_006_01.h5,2022-10-31 12:46:34,1667220394
+541,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/31/ATL08_20221031093759_06211704_006_01.h5,2022-10-31 09:37:59,1667209079
+542,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/30/ATL08_20221030192925_06121704_006_01.h5,2022-10-30 19:29:25,1667158165
+543,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/30/ATL08_20221030100340_06061704_006_01.h5,2022-10-30 10:03:40,1667124220
+544,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/30/ATL08_20221030083431_06051705_006_01.h5,2022-10-30 08:34:31,1667118871
+545,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/29/ATL08_20221029194937_05971703_006_01.h5,2022-10-29 19:49:37,1667072977
+546,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/29/ATL08_20221029120335_05921704_006_01.h5,2022-10-29 12:03:35,1667045015
+547,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/29/ATL08_20221029090009_05901705_006_01.h5,2022-10-29 09:00:09,1667034009
+548,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/28/ATL08_20221028201514_05821703_006_01.h5,2022-10-28 20:15:14,1666988114
+549,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/28/ATL08_20221028122912_05771704_006_01.h5,2022-10-28 12:29:12,1666960152
+550,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/28/ATL08_20221028092038_05751704_006_01.h5,2022-10-28 09:20:38,1666948838
+551,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/27/ATL08_20221027125453_05621704_006_01.h5,2022-10-27 12:54:53,1666875293
+552,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/27/ATL08_20221027094618_05601704_006_01.h5,2022-10-27 09:46:18,1666863978
+553,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/27/ATL08_20221027083807_05591708_006_01.h5,2022-10-27 08:38:07,1666859887
+554,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/27/ATL08_20221027083105_05591707_006_01.h5,2022-10-27 08:31:05,1666859465
+555,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/26/ATL08_20221026193742_05511704_006_01.h5,2022-10-26 19:37:42,1666813062
+556,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/26/ATL08_20221026101158_05451704_006_01.h5,2022-10-26 10:11:58,1666779118
+557,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/25/ATL08_20221025195758_05361703_006_01.h5,2022-10-25 19:57:58,1666727878
+558,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/25/ATL08_20221025121156_05311704_006_01.h5,2022-10-25 12:11:56,1666699916
+559,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/25/ATL08_20221025090830_05291705_006_01.h5,2022-10-25 09:08:30,1666688910
+560,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/24/ATL08_20221024202337_05211703_006_01.h5,2022-10-24 20:23:37,1666643017
+561,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/24/ATL08_20221024123735_05161704_006_01.h5,2022-10-24 12:37:35,1666615055
+562,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/24/ATL08_20221024110318_05151704_006_01.h5,2022-10-24 11:03:18,1666609398
+563,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/24/ATL08_20221024092900_05141704_006_01.h5,2022-10-24 09:29:00,1666603740
+564,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/23/ATL08_20221023130314_05011704_006_01.h5,2022-10-23 13:03:14,1666530194
+565,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/23/ATL08_20221023095440_04991704_006_01.h5,2022-10-23 09:54:40,1666518880
+566,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/23/ATL08_20221023084629_04981708_006_01.h5,2022-10-23 08:46:29,1666514789
+567,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/23/ATL08_20221023083927_04981707_006_01.h5,2022-10-23 08:39:27,1666514367
+568,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/22/ATL08_20221022194602_04901704_006_01.h5,2022-10-22 19:46:02,1666467962
+569,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/22/ATL08_20221022102018_04841704_006_01.h5,2022-10-22 10:20:18,1666434018
+570,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/21/ATL08_20221021200616_04751703_006_01.h5,2022-10-21 20:06:16,1666382776
+571,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/21/ATL08_20221021091649_04681705_006_01.h5,2022-10-21 09:16:49,1666343809
+572,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/20/ATL08_20221020203157_04601703_006_01.h5,2022-10-20 20:31:57,1666297917
+573,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/20/ATL08_20221020124556_04551704_006_01.h5,2022-10-20 12:45:56,1666269956
+574,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/20/ATL08_20221020094230_04531705_006_01.h5,2022-10-20 09:42:30,1666258950
+575,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/20/ATL08_20221020093721_04531704_006_01.h5,2022-10-20 09:37:21,1666258641
+576,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/19/ATL08_20221019131136_04401704_006_01.h5,2022-10-19 13:11:36,1666185096
+577,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/19/ATL08_20221019100301_04381704_006_01.h5,2022-10-19 10:03:01,1666173781
+578,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/19/ATL08_20221019085450_04371708_006_01.h5,2022-10-19 08:54:50,1666169690
+579,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/19/ATL08_20221019084748_04371707_006_01.h5,2022-10-19 08:47:48,1666169268
+580,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/18/ATL08_20221018210042_04291714_006_01.h5,2022-10-18 21:00:42,1666126842
+581,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/18/ATL08_20221018195425_04291704_006_01.h5,2022-10-18 19:54:25,1666122865
+582,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/18/ATL08_20221018102840_04231704_006_01.h5,2022-10-18 10:28:40,1666088920
+583,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/17/ATL08_20221017202004_04141704_006_01.h5,2022-10-17 20:20:04,1666038004
+584,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/17/ATL08_20221017201439_04141703_006_01.h5,2022-10-17 20:14:39,1666037679
+585,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/17/ATL08_20221017122837_04091704_006_01.h5,2022-10-17 12:28:37,1666009717
+586,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/17/ATL08_20221017092511_04071705_006_01.h5,2022-10-17 09:25:11,1665998711
+587,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/16/ATL08_20221016204017_03991703_006_01.h5,2022-10-16 20:40:17,1665952817
+588,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/16/ATL08_20221016125415_03941704_006_01.h5,2022-10-16 12:54:15,1665924855
+589,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/16/ATL08_20221016095049_03921705_006_01.h5,2022-10-16 09:50:49,1665913849
+590,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/16/ATL08_20221016094540_03921704_006_01.h5,2022-10-16 09:45:40,1665913540
+591,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/15/ATL08_20221015131953_03791704_006_01.h5,2022-10-15 13:19:53,1665839993
+592,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/15/ATL08_20221015101118_03771704_006_01.h5,2022-10-15 10:11:18,1665828678
+593,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/15/ATL08_20221015090307_03761708_006_01.h5,2022-10-15 09:03:07,1665824587
+594,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/14/ATL08_20221014210858_03681714_006_01.h5,2022-10-14 21:08:58,1665781738
+595,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/14/ATL08_20221014200241_03681704_006_01.h5,2022-10-14 20:02:41,1665777761
+596,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/14/ATL08_20221014103656_03621704_006_01.h5,2022-10-14 10:36:56,1665743816
+597,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/13/ATL08_20221013202820_03531704_006_01.h5,2022-10-13 20:28:20,1665692900
+598,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/13/ATL08_20221013202255_03531703_006_01.h5,2022-10-13 20:22:55,1665692575
+599,https://data.nsidc.earthdatacloud.nasa.gov/nsidc-cumulus-prod-protected/ATLAS/ATL08/006/2022/10/13/ATL08_20221013093328_03461705_006_01.h5,2022-10-13 09:33:28,1665653608
