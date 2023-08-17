@@ -80,11 +80,12 @@ def savefile(args):
                     
                     atl8_len = len(df8)
                     
-                    
+                    atl3_len_geohash = 0
                     if atl8_len > 0:
                         df8 = geohash_lapig(df8)
                         atl8_len_geohash = len(df8)
                         if atl8_len_geohash > 0:
+                            logger.info(f'temos {atl8_len_geohash} pontos para atl8')
                             f_atl03 = session.get(atl82atl3(url), allow_redirects=True)
                             with open(file_name3, 'wb') as f:
                                 f.write(f_atl03.content)
@@ -97,6 +98,7 @@ def savefile(args):
                             
                             df3 = geohash_lapig(df3)
                             atl3_len_geohash = len(df3)
+                            logger.info(f'temos {atl3_len_geohash} pontos para atl3')
                             logger.info(f'gerado geohash para {file_name3}')
 
                     
