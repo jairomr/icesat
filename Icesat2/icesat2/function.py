@@ -20,7 +20,7 @@ def to_geohash(row):
 def geohash_lapig(tmp_df):
     tmp_df['geohash'] = tmp_df.apply(to_geohash, axis=1)
     filtered_df = tmp_df[
-        tmp_df['geohash'].str.startswith(('d', '6', '7'))
+        tmp_df['geohash'].str.startswith(('6v7','6vk','6v5','6vh'))
     ].copy()
     return filtered_df
 

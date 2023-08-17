@@ -1,9 +1,9 @@
 DB_NAME_ATL8_QL = 'atl8_ql_raw_v5'
 COLLECTION_NAME_QL = 'icesat2v5'
 
-COLLECTION_NAME = 'icesat2v8'
-DB_NAME_ATL3 = 'atl3_raw_v6'
-DB_NAME_ATL8 = 'atl8_rawv8'
+COLLECTION_NAME = 'icesat2v9'
+DB_NAME_ATL3 = 'atl3_raw_v9'
+DB_NAME_ATL8 = 'atl8_rawv9'
 
 
 username = 'username'
