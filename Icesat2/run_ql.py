@@ -18,7 +18,7 @@ from pymongo.errors import DuplicateKeyError
 from requests import Session
 from rich import print
 
-from Icesat2.icesat2.function import geohash_lapig
+from icesat2.function import geohash_lapig
 
 Base.metadata.create_all(engine)
 
