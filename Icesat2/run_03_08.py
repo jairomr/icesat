@@ -58,10 +58,10 @@ def savefile(args):
         logger.debug(url)
 
         f_atl08 = session.get(url, allow_redirects=True)
-        f_atl03 = session.get(atl82atl3(url), allow_redirects=True)
+        
 
         with tempfile.TemporaryDirectory() as tmpdirname:
-            if f_atl08.ok and f_atl03.ok:
+            if f_atl08.ok:
                 logger.info(
                     f'Ok Baixando {namefile_atl8} {namefile_atl3}'
                 )   # Say
@@ -85,6 +85,7 @@ def savefile(args):
                         df8 = geohash_lapig(df8)
                         atl8_len_geohash = len(df8)
                         if atl8_len_geohash > 0:
+                            f_atl03 = session.get(atl82atl3(url), allow_redirects=True)
                             with open(file_name3, 'wb') as f:
                                 f.write(f_atl03.content)
                             logger.info(f'baixnado {file_name3}')
