@@ -71,7 +71,7 @@ def savefile(args):
                         gdf8['_id'] = _id
 
                         gdf8['_id'] = gdf8['_id'].astype(np.int32)
-
+                        logger.debug(gdf8)
                         gdf8.to_postgis(
                             settings.DB_NAME_ATL8,
                             engine,

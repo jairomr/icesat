@@ -18,6 +18,7 @@ from pymongo.errors import DuplicateKeyError
 from requests import Session
 from rich import print
 
+import psycopg2
 from Icesat2.icesat2.function import geohash_lapig
 
 Base.metadata.create_all(engine)
@@ -72,12 +73,15 @@ def savefile(args):
 
                         gdf8['_id'] = gdf8['_id'].astype(np.int32)
 
-                        gdf8.to_postgis(
-                            settings.DB_NAME_ATL8,
-                            engine,
-                            if_exists='append',
-                            index=False,
-                        )
+                        try:
+                            gdf8.to_postgis(
+                                settings.DB_NAME_ATL8,
+                                engine,
+                                if_exists='append',
+                                index=False,
+                            )
+                        except psycopg2.DatabaseError as e:
+                            logger.exception(e)
 
                         tend = datetime.now()
                         tempo_gasto = tend - tstart
