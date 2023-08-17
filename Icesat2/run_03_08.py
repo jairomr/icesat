@@ -110,17 +110,8 @@ def savefile(args):
                         SAVE_GDF8 = True
                         if error_in_save:
                             if not code_status['atl8']:
-                                r1 = pd.read_sql_query(f'select _id from {settings.DB_NAME_ATL8} where _id = {_id} limit 1', engine)
-                            if len(r1) > 0 or not code_status['atl8']:
                                 SAVE_GDF8 = False
-                            r2 = pd.read_sql_query('select _id from {settings.DB_NAME_ATL3} where _id = {_id} limit 1',engine)
-                            if len(r2) > 0:
-                                Session = sessionmaker(bind=engine)
-                                session = Session()
-                                # Usar o with statement para criar e gerenciar a sessão
-                                with Session() as session:
-                                    # Deletar da tabela Atl3QLRaw
-                                    session.query(Atl3Raw).filter(Atl3Raw._id == _id).delete()
+                            
                                 
                             
                         if SAVE_GDF8:
@@ -171,7 +162,8 @@ def savefile(args):
                                 ] + [(tmp[-1], atl3_len)]
                             pages = code_status['atl3_pages']['pages']
                             logger.debug(f'pages {len(pages)}')
-                            for number_page, start, end in enumerate(pages):
+                            for number_page, _data in enumerate(pages):
+                                start, end = _data
                                 now_number_page = code_status['atl3_pages']['number_page']
                                 if number_page >= now_number_page:
                                     code_status['atl3_pages']['number_page'] = number_page
