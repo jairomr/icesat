@@ -81,7 +81,7 @@ def savefile(args):
                             with DBsession.begin() as db:
                                 gdf8.to_postgis(
                                     settings.DB_NAME_ATL8,
-                                    db.connection(),,
+                                    db.connection(),
                                     if_exists='append',
                                     index=False,
                                 )
