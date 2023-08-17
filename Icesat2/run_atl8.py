@@ -17,11 +17,15 @@ from pymongo import MongoClient
 from pymongo.errors import DuplicateKeyError
 from requests import Session
 from rich import print
+from sqlalchemy.orm import sessionmaker
 
 import psycopg2
 from Icesat2.icesat2.function import geohash_lapig
 
 Base.metadata.create_all(engine)
+
+Session = sessionmaker(bind=engine)
+DBsession = Session()
 
 
 def savefile(args):
@@ -74,12 +78,13 @@ def savefile(args):
                         gdf8['_id'] = gdf8['_id'].astype(np.int32)
 
                         try:
-                            gdf8.to_postgis(
-                                settings.DB_NAME_ATL8,
-                                engine,
-                                if_exists='append',
-                                index=False,
-                            )
+                            with DBsession.begin() as db:
+                                gdf8.to_postgis(
+                                    settings.DB_NAME_ATL8,
+                                    db.connection(),,
+                                    if_exists='append',
+                                    index=False,
+                                )
                         except psycopg2.DatabaseError as e:
                             logger.exception(e)
 
