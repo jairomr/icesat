@@ -85,6 +85,9 @@ def savefile(args):
                     df8 = process_atl08(file_name8)
                     logger.info(f'finalizado processamento {file_name8}')
                     
+                    atl8_len = 0
+                    atl3_len = 0
+                    
                     atl8_len = len(df8)
                     
                     atl3_len_geohash = 0
@@ -154,12 +157,12 @@ def savefile(args):
                         
                         
                         
-                        if atl3_len > 1000000:
+                        if atl3_len_geohash > 1000000:
                             if len(code_status['atl3_pages']['pages']) == 0:
-                                tmp = [i for i in range(0, atl3_len, 1000000)]
+                                tmp = [i for i in range(0, atl3_len_geohash, 1000000)]
                                 code_status['atl3_pages']['pages'] = [
                                     (i, tmp[n + 1]) for n, i in enumerate(tmp[:-1])
-                                ] + [(tmp[-1], atl3_len)]
+                                ] + [(tmp[-1], atl3_len_geohash)]
                             pages = code_status['atl3_pages']['pages']
                             logger.debug(f'pages {len(pages)}')
                             for number_page, _data in enumerate(pages):
