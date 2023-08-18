@@ -8,7 +8,7 @@ import pandas as pd
 from icesat2.config import logger, settings
 from icesat2.db import engine
 from icesat2.function import atl82atl3, geohash_lapig, saveMongo
-from icesat2.model.atl import Atl3Raw, Base
+from icesat2.model.atl import Base
 from icesat2.nasa_login import SessionWithHeaderRedirection
 from sqlalchemy.orm import sessionmaker
 from icesat2.utils import process_atl03, process_atl08
@@ -38,12 +38,11 @@ def savefile(args):
         cd_s = collection.find_one({'_id':_id},{'code_status':1})
         try:
             code_status = cd_s['code_status']
+            logger.debug(code_status)
         except:
+            logger.info('not code status')
             ...            
-            
-        
-    
-    
+
 
     session = SessionWithHeaderRedirection(
         settings.username, settings.password
@@ -54,8 +53,12 @@ def savefile(args):
         '_id': _id,
         'file': namefile_atl8,
         'url': url,
+        'size': {
+            'atl8': 0,
+            'atl3': 0,
+        }
      }
-
+    
     try:
         logger.info(f'Tentado baixar: {namefile_atl8} {namefile_atl3}')
 
@@ -76,7 +79,7 @@ def savefile(args):
                     with open(file_name8, 'wb') as f:
                         f.write(f_atl08.content)
                         
-                    file_stats8 = os.stat(file_name8).st_size
+                    pre_doc['size']['atl8'] = os.stat(file_name8).st_size
                     logger.info(f'baixnado {file_name8}')
                     
                     df8 = process_atl08(file_name8)
@@ -94,7 +97,7 @@ def savefile(args):
                             with open(file_name3, 'wb') as f:
                                 f.write(f_atl03.content)
                             logger.info(f'baixnado {file_name3}')
-                            file_stats3 = os.stat(file_name3).st_size
+                            pre_doc['size']['atl3'] = os.stat(file_name3).st_size
                             logger.info(f'processando {file_name3} e {file_name8}')
                             df3 = process_atl03(file_name3, file_name8)
                             logger.info(f'finalizado processamento {file_name3}')
@@ -111,14 +114,7 @@ def savefile(args):
 
                     if atl8_len_geohash > 0 and atl3_len_geohash > 0:
                         
-                        SAVE_GDF8 = True
-                        if error_in_save:
-                            if not code_status['atl8']:
-                                SAVE_GDF8 = False
-                            
-                                
-                            
-                        if SAVE_GDF8:
+                        if not code_status['atl8']:
                             gdf8 = gpd.GeoDataFrame(
                                 df8,
                                 crs=4326,
@@ -167,23 +163,33 @@ def savefile(args):
                             pages = code_status['atl3_pages']['pages']
                             logger.debug(f'pages {len(pages)}')
                             for number_page, _data in enumerate(pages):
+                                __flag_error_loop__ = False
                                 start, end = _data
                                 now_number_page = code_status['atl3_pages']['number_page']
-                                if number_page >= now_number_page:
+                                if number_page >= now_number_page and not not code_status['atl3']:
                                     code_status['atl3_pages']['number_page'] = number_page
                                     logger.debug(f'{namefile_atl3} {start} {end}')
-                                    gdf3[start:end].to_postgis(
-                                        settings.DB_NAME_ATL3,
-                                        engine,
-                                        if_exists='append',
-                                        index=False,
-                                    )
-                                    saveMongo({
-                                        '_id':_id,
-                                        'code_status':code_status,
-                                    })
-
-                        else:
+                                    try:
+                                        gdf3[start:end].to_postgis(
+                                            settings.DB_NAME_ATL3,
+                                            engine,
+                                            if_exists='append',
+                                            index=False,
+                                        )
+                                    except Exception as e:
+                                        __flag_error_loop__ = True
+                                        raise Exception(e)
+                                    finally:
+                                        if __flag_error_loop__:
+                                            saveMongo({
+                                                '_id':_id,
+                                                'code_status':code_status,
+                                            })
+                                            logger.error('{_id}: Erro ao rodar a page {number_page}')
+                                        else:
+                                            logger.error('{_id}: Page {number_page} salva')
+                                            
+                        elif not code_status['atl3']:
                             gdf3.to_postgis(
                                 settings.DB_NAME_ATL3,
                                 engine,
@@ -192,11 +198,7 @@ def savefile(args):
                             )
                         
                         code_status['atl3'] = True
-                        saveMongo({
-                                '_id':_id,
-                                'code_status':code_status,
-                            })
-                        
+                       
 
                         tend = datetime.now()
                         tempo_gasto = tend - tstart
@@ -209,10 +211,7 @@ def savefile(args):
                             doc = {
                                 **pre_doc,
                                 'status': 'downloaded',
-                                'size': {
-                                    'atl8': file_stats8,
-                                    'atl3': file_stats3,
-                                },
+                                'code_status':code_status,
                                 'len': {
                                     'atl8': atl8_len,
                                     'alt3': atl3_len,
@@ -244,10 +243,7 @@ def savefile(args):
                             doc = {
                                 **pre_doc,
                                 'status': 'empty file',
-                                'size': {
-                                    'atl8': file_stats8,
-                                    'atl3': file_stats3,
-                                },
+                                
                                 'len': {
                                     'atl8': atl8_len,
                                     'alt3': atl3_len,
@@ -328,3 +324,6 @@ if __name__ == '__main__':
         ]
         with Pool(settings.CORE) as works:
             works.map(savefile, args)
+
+
+    

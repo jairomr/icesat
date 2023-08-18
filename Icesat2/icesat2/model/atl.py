@@ -31,6 +31,7 @@ class Atl8Raw(Base):
     __tablename__ = settings.DB_NAME_ATL8
 
     id = Column(Integer, primary_key=True)
+    _id = Column(Integer, nullable=True)
     seg_utc_time = Column(DateTime, nullable=True)
     strength = Column(ATLStrength, nullable=True)
     canopy_h_metrics_0 = Column(Float(precision=32), nullable=True)
@@ -76,7 +77,7 @@ class Atl8Raw(Base):
     geometry = Column(
         Geometry(geometry_type='POINT', srid=4326), nullable=True
     )
-    _id = Column(Integer, nullable=True)
+    
     geohash = Column(String(length=3), nullable=True)
 
 
@@ -99,7 +100,7 @@ class Atl3Raw(Base):
     _id                        int64
     """
     id = Column(Integer, primary_key=True)
-    
+    _id = Column(Integer, nullable=True)
     seg_id = Column(Integer,nullable=True)
     ph_utc_time = Column(DateTime, nullable=True)
     norm_h = Column(Float(precision=32), nullable=True)
@@ -109,9 +110,8 @@ class Atl3Raw(Base):
     quality_ph = Column(SmallInteger, nullable=True)
     signal_conf_ph = Column(SmallInteger, nullable=True)
     beam = Column(Boolean, nullable=True)
-    
     geometry = Column(
         Geometry(geometry_type='POINT', srid=4326), nullable=True
     )
-    _id = Column(Integer, nullable=True)
+    
     geohash = Column(String(length=3), nullable=True)
