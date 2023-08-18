@@ -169,7 +169,7 @@ def savefile(args):
                                 __flag_error_loop__ = False
                                 start, end = _data
                                 now_number_page = code_status['atl3_pages']['number_page']
-                                if number_page >= now_number_page and not not code_status['atl3']:
+                                if number_page >= now_number_page and not code_status['atl3']:
                                     code_status['atl3_pages']['number_page'] = number_page
                                     logger.debug(f'{namefile_atl3} {start} {end}')
                                     try:
