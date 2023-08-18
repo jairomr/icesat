@@ -118,8 +118,8 @@ def process_track(file, track):
             ],
         ].copy()
         return df_out
-    except KeyError:
-        logger.exception('Error com coluna faltando')
+    except KeyError as e:
+        logger.exception('Error com coluna faltando {e}')
         return pd.DataFrame()
 
 

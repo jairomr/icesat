@@ -199,6 +199,9 @@ def savefile(args):
                                 if_exists='append',
                                 index=False,
                             )
+                            code_status['atl3'] = True
+                            saveMongo({'_id':_id,'code_status':code_status,
+                                            })
                         
                         code_status['atl3'] = True
                        
@@ -219,8 +222,7 @@ def savefile(args):
                                     'atl8': atl8_len,
                                     'alt3': atl3_len,
                                     'atl8_hash': atl8_len_geohash,
-                                    'atl3_hash': atl3_len_geohash,
-                                    'pages': pages,
+                                    'atl3_hash': atl3_len_geohash
                                 },
                                 'time': {'start': tstart, 'end': tend},
                                 'tempogasto': tempo_gasto.total_seconds() / 60,
