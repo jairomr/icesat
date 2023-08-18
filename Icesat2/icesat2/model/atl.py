@@ -75,7 +75,7 @@ class Atl8Raw(Base):
     sigma = Column(Float(precision=32), nullable=True)
     pop_mean = Column(Float(precision=32), nullable=True)
     geometry = Column(
-        Geometry(geometry_type='POINT', srid=4326), nullable=True
+        Geometry(geometry_type='POINT', srid=4326), nullable=True, index=False
     )
     
     geohash = Column(String(length=3), nullable=True)
@@ -111,7 +111,7 @@ class Atl3Raw(Base):
     signal_conf_ph = Column(SmallInteger, nullable=True)
     beam = Column(Boolean, nullable=True)
     geometry = Column(
-        Geometry(geometry_type='POINT', srid=4326), nullable=True
+        Geometry(geometry_type='POINT', srid=4326), nullable=True, index=False
     )
     
     geohash = Column(String(length=3), nullable=True)

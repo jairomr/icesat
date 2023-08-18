@@ -171,7 +171,7 @@ def savefile(args):
                                 now_number_page = code_status['atl3_pages']['number_page']
                                 if number_page >= now_number_page and not code_status['atl3']:
                                     code_status['atl3_pages']['number_page'] = number_page
-                                    logger.debug(f'{namefile_atl3} {start} {end}')
+                                    logger.debug(f'{_id}:page{number_page} {start} {end}')
                                     try:
                                         gdf3[start:end].to_postgis(
                                             settings.DB_NAME_ATL3,
