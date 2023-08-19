@@ -331,9 +331,9 @@ if __name__ == '__main__':
             (row.url, row._id, 'session', 0)
             for index, row in df[['url', '_id']].iterrows()
         ]
-        logger.info(args)
-        #with Pool(settings.CORE) as works:
-        #    works.map(savefile, args)
+
+        with Pool(settings.CORE) as works:
+            works.map(savefile, args)
             
     logger.success('Fim :)')
 
