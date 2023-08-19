@@ -35,12 +35,12 @@ def savefile(args):
     with MongoClient( f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/') as client:
         db = client['icesat2']
         collection = db['icesat2v9']
-        cd_s = collection.find_one({'_id':_id},{'code_status':1})
+        cd_s = collection.find_one({'_id':_id},{'code':1})
         try:
-            code_status = cd_s['code_status']
+            code_status = cd_s['code']
             logger.debug(code_status)
         except:
-            logger.info('not code status')
+            logger.info(f'{id} not code status')
             ...            
 
 
@@ -187,10 +187,11 @@ def savefile(args):
                                             saveMongo({
                                                 '_id':_id,
                                                 'code_status':code_status,
+                                                'status':'error'
                                             })
-                                            logger.error('{_id}: Erro ao rodar a page {number_page}')
+                                            logger.error(f'{_id}: Erro ao rodar a page {number_page}')
                                         else:
-                                            logger.error('{_id}: Page {number_page} salva')
+                                            logger.info(f'{_id}: Page {number_page} salva')
                                             
                         elif not code_status['atl3']:
                             gdf3.to_postgis(
@@ -279,7 +280,7 @@ def savefile(args):
                 )
 
     except Exception as e:
-        logger.exception('Error not mapeado')
+        logger.exception(f'Error not mapeado {_id}')
         with MongoClient(
             f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/'
         ) as client:
@@ -288,6 +289,7 @@ def savefile(args):
             doc = {
                 '_id': _id,
                 'file': namefile_atl8,
+                'code':code_status,
                 'url': url,
                 'status': 'error',
                 'msg': str(e),
