@@ -312,13 +312,15 @@ if __name__ == '__main__':
         collection = db[settings.COLLECTION_NAME]
 
         files_runs = collection.find(
-            {'$or': [{'status': 'downloaded'}, {'status': 'empty file'}]}
-        ).distinct('file')
-    logger.info(files_runs)
+        {'$or': [{'status': 'downloaded'}, {'status': 'empty file'}]},
+        {'file':1,'status':1})
+        runs_olds=pd.DataFrame(files_runs)
+        
+
     df = pd.read_csv('urls.dat')
-    df['file'] = df['url'].apply(lambda x: x.split('/')[-1].replace('QL', ''))
+    
     total = len(df)
-    df = df[~df['file'].isin(files_runs)]
+    df = df[~df['_id'].isin(runs_olds['_id'])]
     complet = len(df)
     logger.info(f'Feito {total-complet} de {total} falta {complet}')
 
@@ -329,8 +331,11 @@ if __name__ == '__main__':
             (row.url, row._id, 'session', 0)
             for index, row in df[['url', '_id']].iterrows()
         ]
-        with Pool(settings.CORE) as works:
-            works.map(savefile, args)
+        logger.info(args)
+        #with Pool(settings.CORE) as works:
+        #    works.map(savefile, args)
+            
+    logger.success('Fim :)')
 
 
     
