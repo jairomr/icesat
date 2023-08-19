@@ -314,7 +314,7 @@ if __name__ == '__main__':
         files_runs = collection.find(
             {'$or': [{'status': 'downloaded'}, {'status': 'empty file'}]}
         ).distinct('file')
-
+    logger.info(files_runs)
     df = pd.read_csv('urls.dat')
     df['file'] = df['url'].apply(lambda x: x.split('/')[-1].replace('QL', ''))
     total = len(df)
