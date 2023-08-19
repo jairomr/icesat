@@ -35,9 +35,9 @@ def savefile(args):
     with MongoClient( f'mongodb://{settings.MONGO_HOST}:{settings.DB_PORT_MONGO}/') as client:
         db = client['icesat2']
         collection = db['icesat2v9']
-        cd_s = collection.find_one({'_id':_id},{'code':1})
+        cd_s = collection.find_one({'_id':_id},{'code_status':1})
         try:
-            code_status = cd_s['code']
+            code_status = cd_s['code_status']
             logger.debug(code_status)
         except:
             logger.info(f'{id} not code status')
@@ -289,7 +289,7 @@ def savefile(args):
             doc = {
                 '_id': _id,
                 'file': namefile_atl8,
-                'code':code_status,
+                'code_status':code_status,
                 'url': url,
                 'status': 'error',
                 'msg': str(e),
