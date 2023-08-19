@@ -40,7 +40,7 @@ def savefile(args):
             code_status = cd_s['code_status']
             logger.debug(code_status)
         except:
-            logger.info(f'{id} not code status')
+            logger.info(f'{_id} not code status')
             ...            
 
 
