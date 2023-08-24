@@ -320,7 +320,10 @@ if __name__ == '__main__':
     df = pd.read_csv('urls.dat')
     
     total = len(df)
-    df = df[~df['_id'].isin(runs_olds['_id'])]
+    try:
+        df = df[~df['_id'].isin(runs_olds['_id'])]
+    except KeyError:
+        ...
     complet = len(df)
     logger.info(f'Feito {total-complet} de {total} falta {complet}')
 
