@@ -78,7 +78,7 @@ class Atl8Raw(Base):
         Geometry(geometry_type='POINT', srid=4326), nullable=True, index=False
     )
     
-    geohash = Column(String(length=3), nullable=True)
+    geohash = Column(String(length=5), nullable=True)
 
 
 class Atl3Raw(Base):
@@ -114,4 +114,4 @@ class Atl3Raw(Base):
         Geometry(geometry_type='POINT', srid=4326), nullable=True, index=False
     )
     
-    geohash = Column(String(length=3), nullable=True)
+    geohash = Column(String(length=5), nullable=True)
