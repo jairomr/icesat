@@ -19,7 +19,7 @@ def to_geohash(row):
 
 
 def geohash_lapig(tmp_df):
-    with open('geohash_5_maior_20.obj') as f:
+    with open('geohash_5_maior_20.obj','rb') as f:
         filter_geohash = pickle.load(f)
     # '6v7','6vk','6v5','6vh'
     tmp_df['geohash'] = tmp_df.apply(to_geohash, axis=1)
