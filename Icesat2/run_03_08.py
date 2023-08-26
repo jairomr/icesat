@@ -1,7 +1,9 @@
 import os
+from pathlib import Path
 import tempfile
 from datetime import datetime
 from multiprocessing import Pool
+from pyinstrument import Profiler
 
 import geopandas as gpd
 import pandas as pd
@@ -18,9 +20,12 @@ from requests import Session
 
 Base.metadata.create_all(engine)
 
+PROFILE_ROOT = Path('./.profiles')
 
 def savefile(args):
-    url, _id, session, error = args
+    profiler = Profiler()
+    profiler.start()
+    url, _id, error = args
     tstart = datetime.now()
     error_in_save = False
     code_status = {
@@ -258,7 +263,8 @@ def savefile(args):
                                     'atl3_hash': atl3_len_geohash,
                                 },
                                 'time': {'start': tstart, 'end': tend},
-                                'tempogasto': tempo_gasto.total_seconds() / 60,
+                                'tempogasto_seconds': tempo_gasto.total_seconds(),
+                                'tempogasto_humano': str(tempo_gasto),
                             }
 
                             try:
@@ -303,6 +309,13 @@ def savefile(args):
                 logger.warning(
                     f'Documento com erro {_id} atualizado com sucesso.'
                 )
+    finally:
+        session.close()
+        profiler.stop()
+        PROFILE_ROOT.mkdir(exist_ok=True)
+        results_file = PROFILE_ROOT / f'{_id}.html'
+        with open(results_file, "w", encoding="utf-8") as f_html:
+            f_html.write(profiler.output_html())
 
 
 if __name__ == '__main__':
@@ -329,15 +342,14 @@ if __name__ == '__main__':
     logger.info(f'Feito {total-complet} de {total} falta {complet}')
 
     # savefile((df['url'].iloc[0],session))
-    with Session() as session:
-        session.auth = (settings.username, settings.password)
-        args = [
-            (row.url, row._id, 'session', 0)
+    
+    args = [
+            (row.url, row._id, 0)
             for index, row in df[['url', '_id']].iterrows()
         ]
 
-        with Pool(settings.CORE) as works:
-            works.map(savefile, args)
+    with Pool(settings.CORE) as works:
+        works.map(savefile, args)
             
     logger.success('Fim :)')
 
