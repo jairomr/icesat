@@ -9,3 +9,4 @@ GeoAlchemy2
 pymongo
 python-geohash
 pyinstrument
+memory-profiler
