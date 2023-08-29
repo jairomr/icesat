@@ -17,11 +17,13 @@ from icesat2.utils import process_atl03, process_atl08
 from pymongo import MongoClient
 from pymongo.errors import DuplicateKeyError
 from requests import Session
+from memory_profiler import profile 
+
 
 Base.metadata.create_all(engine)
 
 PROFILE_ROOT = Path('./.profiles')
-
+@profile
 def savefile(args):
     profiler = Profiler()
     profiler.start()
@@ -131,6 +133,7 @@ def savefile(args):
                                     df8['longitude'], df8['latitude']
                                 ),
                             )
+                            del df8
                             gdf8 = gdf8.drop(columns=['longitude', 'latitude'])
 
                             gdf8['_id'] = _id
@@ -155,7 +158,7 @@ def savefile(args):
                                 df3['lon_ph'], df3['lat_ph']
                             ),
                         )
-                        
+                        del df3
                         
                         gdf3 = gdf3.drop(columns=['lon_ph', 'lat_ph'])
 
@@ -232,7 +235,8 @@ def savefile(args):
                                     'atl3_hash': atl3_len_geohash
                                 },
                                 'time': {'start': tstart, 'end': tend},
-                                'tempogasto': tempo_gasto.total_seconds() / 60,
+                                'tempogasto_seconds': tempo_gasto.total_seconds(),
+                                'tempogasto_humano': str(tempo_gasto),
                             }
                             try:
                                 collection.insert_one(doc)
