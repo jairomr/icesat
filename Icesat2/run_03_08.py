@@ -22,8 +22,12 @@ from memory_profiler import profile
 
 Base.metadata.create_all(engine)
 
+
+
 PROFILE_ROOT = Path('./.profiles')
-@profile
+
+fp = open("report_memory.log", "w+")
+@profile(stream = fp)
 def savefile(args):
     profiler = Profiler()
     profiler.start()
